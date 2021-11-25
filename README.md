@@ -10,3 +10,5 @@
 ### --> N Katmanlı Mimari
 ### --> Microsoft EntityFramework Core
 ### --> AutoMapper
+### --> Fluent API
+
