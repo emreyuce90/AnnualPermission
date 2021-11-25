@@ -6414,11 +6414,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EMRE\\Desktop\\annualPermissions\\PermissionApp\\AnnualPermissionApp.DAL\\AnnualPermissionApp.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\EMRE\\Desktop\\PermissionApp\\AnnualPermissionApp.DAL\\AnnualPermissionApp.DAL.csproj",
       "projectName": "AnnualPermissionApp.DAL",
-      "projectPath": "C:\\Users\\EMRE\\Desktop\\annualPermissions\\PermissionApp\\AnnualPermissionApp.DAL\\AnnualPermissionApp.DAL.csproj",
+      "projectPath": "C:\\Users\\EMRE\\Desktop\\PermissionApp\\AnnualPermissionApp.DAL\\AnnualPermissionApp.DAL.csproj",
       "packagesPath": "C:\\Users\\EMRE\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\EMRE\\Desktop\\annualPermissions\\PermissionApp\\AnnualPermissionApp.DAL\\obj\\",
+      "outputPath": "C:\\Users\\EMRE\\Desktop\\PermissionApp\\AnnualPermissionApp.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\EMRE\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6435,8 +6435,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\EMRE\\Desktop\\annualPermissions\\PermissionApp\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj": {
-              "projectPath": "C:\\Users\\EMRE\\Desktop\\annualPermissions\\PermissionApp\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj"
+            "C:\\Users\\EMRE\\Desktop\\PermissionApp\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj": {
+              "projectPath": "C:\\Users\\EMRE\\Desktop\\PermissionApp\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj"
             }
           }
         }

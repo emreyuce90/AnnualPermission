@@ -30,3 +30,5 @@ C:\Users\EMRE\Desktop\annualPermissions\PermissionApp\AnnualPermissionApp.BLL\ob
 C:\Users\EMRE\Desktop\annualPermissions\PermissionApp\AnnualPermissionApp.BLL\obj\Debug\netcoreapp3.1\AnnualPermissionApp.BLL.pdb
 C:\Users\EMRE\Desktop\annualPermissions\PermissionApp\AnnualPermissionApp.BLL\bin\Debug\netcoreapp3.1\AnnualPermissionApp.DTO.dll
 C:\Users\EMRE\Desktop\annualPermissions\PermissionApp\AnnualPermissionApp.BLL\bin\Debug\netcoreapp3.1\AnnualPermissionApp.DTO.pdb
+C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\bin\Debug\netcoreapp3.1\AnnualPermissionApp.DTO.dll
+C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\bin\Debug\netcoreapp3.1\AnnualPermissionApp.DTO.pdb

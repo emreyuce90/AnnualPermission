@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\EMRE\\Desktop\\annualPermissions\\PermissionApp\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj": {}
+    "C:\\Users\\EMRE\\Desktop\\PermissionApp\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\EMRE\\Desktop\\annualPermissions\\PermissionApp\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj": {
+    "C:\\Users\\EMRE\\Desktop\\PermissionApp\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\EMRE\\Desktop\\annualPermissions\\PermissionApp\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\EMRE\\Desktop\\PermissionApp\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj",
         "projectName": "AnnualPermissionApp.Entities",
-        "projectPath": "C:\\Users\\EMRE\\Desktop\\annualPermissions\\PermissionApp\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj",
+        "projectPath": "C:\\Users\\EMRE\\Desktop\\PermissionApp\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj",
         "packagesPath": "C:\\Users\\EMRE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\EMRE\\Desktop\\annualPermissions\\PermissionApp\\AnnualPermissionApp.Entities\\obj\\",
+        "outputPath": "C:\\Users\\EMRE\\Desktop\\PermissionApp\\AnnualPermissionApp.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\EMRE\\AppData\\Roaming\\NuGet\\NuGet.Config",

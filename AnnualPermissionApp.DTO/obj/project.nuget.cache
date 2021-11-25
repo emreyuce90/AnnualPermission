@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Guzd2ZHXhoshONL3JQUwibyFwsXTGVFZjL6EHW1y4V1DhP1Tomob3IXAeIT6qeoqgnArUp+3d8K/xb/TU0pZnQ==",
+  "dgSpecHash": "Zph6ZFRifz9wH+Wry0S6sDowjFtMhqV1oRHipG8Yb7NzV+fsDR5XDDGeQThmBcwmXC2kpSLBmG7KRsWNFAGFrQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\EMRE\\Desktop\\annualPermissions\\PermissionApp\\AnnualPermissionApp.DTO\\AnnualPermissionApp.DTO.csproj",
+  "projectFilePath": "C:\\Users\\EMRE\\Desktop\\PermissionApp\\AnnualPermissionApp.DTO\\AnnualPermissionApp.DTO.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

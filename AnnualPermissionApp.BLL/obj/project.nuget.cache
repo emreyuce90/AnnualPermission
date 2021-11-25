@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wJkUWdHquM1BdlazDf4bxsw5I33d7wiDPG/qLiDLCoC1FdfS9QCzoTeqilulRB8QsFrAPoRJvR5tVkPRSt4Sww==",
+  "dgSpecHash": "S16gH2zwYbLUMRt0b/VfGgu/6LToAXsHzc5KLRei0qRy99FdzkGD1UH4MT+H6YfABfTkbVa1OZXNZZ6Y/RmkiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\EMRE\\Desktop\\annualPermissions\\PermissionApp\\AnnualPermissionApp.BLL\\AnnualPermissionApp.BLL.csproj",
+  "projectFilePath": "C:\\Users\\EMRE\\Desktop\\PermissionApp\\AnnualPermissionApp.BLL\\AnnualPermissionApp.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EMRE\\.nuget\\packages\\fluentvalidation\\10.3.4\\fluentvalidation.10.3.4.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.4\\fluentvalidation.aspnetcore.10.3.4.nupkg.sha512",
