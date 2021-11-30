@@ -28,7 +28,7 @@ namespace PermissionApp.AnnualPermissionApp.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateEmployee([FromForm] EmployeeAddDto e)
+        public async Task<IActionResult> CreateEmployee(EmployeeAddDto e)
         {
             if (ModelState.IsValid)
             {
