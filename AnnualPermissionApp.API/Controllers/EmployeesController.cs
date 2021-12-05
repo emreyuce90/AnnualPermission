@@ -40,7 +40,7 @@ namespace PermissionApp.AnnualPermissionApp.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateEmployees(int id, [FromForm] EmployeeUpdateDto e)
+        public async Task<IActionResult> UpdateEmployees(int id,  EmployeeUpdateDto e)
         {
             //tarayıcıdan girilen id 2 eşit olmalı formdan gönderilen id ye
             if (id != e.Id)
