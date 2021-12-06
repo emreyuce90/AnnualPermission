@@ -26,3 +26,4 @@ C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.DTO\obj\Debug\netcoreapp
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.DTO\obj\Debug\netcoreapp3.1\AnnualPermissionApp.DTO.csproj.CoreCompileInputs.cache
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.DTO\obj\Debug\netcoreapp3.1\AnnualPermissionApp.DTO.dll
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.DTO\obj\Debug\netcoreapp3.1\AnnualPermissionApp.DTO.pdb
+C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.DTO\obj\Debug\netcoreapp3.1\AnnualPermissionApp.DTO.csproj.AssemblyReference.cache
