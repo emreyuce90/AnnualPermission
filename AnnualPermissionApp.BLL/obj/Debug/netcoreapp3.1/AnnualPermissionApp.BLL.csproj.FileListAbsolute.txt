@@ -50,3 +50,8 @@ C:/Users/EMRE/Desktop/PermissionApp/AnnualPermissionApp.BLL/bin/Debug/netcoreapp
 /home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.BLL/obj/Debug/netcoreapp3.1/AnnualPermissionApp.BLL.pdb
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\obj\Debug\netcoreapp3.1\AnnualPermissionApp.BLL.dll
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\obj\Debug\netcoreapp3.1\AnnualPermissionApp.BLL.pdb
+C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\obj\Debug\netcoreapp3.1\AnnualPermissionApp.BLL.csproj.AssemblyReference.cache
+C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\obj\Debug\netcoreapp3.1\AnnualPermissionApp.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\obj\Debug\netcoreapp3.1\AnnualPermissionApp.BLL.AssemblyInfoInputs.cache
+C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\obj\Debug\netcoreapp3.1\AnnualPermissionApp.BLL.AssemblyInfo.cs
+C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\obj\Debug\netcoreapp3.1\AnnualPermissionApp.BLL.csproj.CoreCompileInputs.cache

@@ -20,7 +20,6 @@ C:/Users/EMRE/Desktop/annualPermissions/PermissionApp/AnnualPermissionApp.DTO/ob
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.DTO\bin\Debug\netcoreapp3.1\AnnualPermissionApp.DTO.deps.json
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.DTO\bin\Debug\netcoreapp3.1\AnnualPermissionApp.DTO.dll
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.DTO\bin\Debug\netcoreapp3.1\AnnualPermissionApp.DTO.pdb
-C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.DTO\obj\Debug\netcoreapp3.1\AnnualPermissionApp.DTO.csproj.AssemblyReference.cache
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.DTO\obj\Debug\netcoreapp3.1\AnnualPermissionApp.DTO.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.DTO\obj\Debug\netcoreapp3.1\AnnualPermissionApp.DTO.AssemblyInfoInputs.cache
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.DTO\obj\Debug\netcoreapp3.1\AnnualPermissionApp.DTO.AssemblyInfo.cs
