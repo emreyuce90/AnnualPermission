@@ -12,12 +12,14 @@ namespace PermissionApp.AnnualPermissionApp.API.Controllers
     [Route("api/[controller]")]
     public class EmployeesController : Controller
     {
+        private readonly IEmployeeService _employeeService;
         private readonly IGenericService<Employee> _genericService;
         private readonly IMapper _mapper;
-        public EmployeesController(IGenericService<Employee> genericService, IMapper mapper)
+        public EmployeesController(IGenericService<Employee> genericService, IMapper mapper,IEmployeeService employeeService)
         {
             _genericService = genericService;
             _mapper = mapper;
+            _employeeService = employeeService;
         }
 
         [HttpGet]
@@ -70,6 +72,12 @@ namespace PermissionApp.AnnualPermissionApp.API.Controllers
         {
             await _genericService.DeleteAsync(new Employee { Id = id });
             return NoContent();
+        }
+
+        [HttpGet("[action]/{id}")]
+        public async Task<IActionResult> GetEmployeesWithPermissions(int id){
+
+            return Ok(await _employeeService.GetEmployeesWithPermissions(id));
         }
     }
 }
