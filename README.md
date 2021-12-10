@@ -3,8 +3,8 @@
 
 ## Kullanılacak Kütüphaneler ve Teknolojiler (Güncellenecektir)
 
-### --> Backend .Net Core Web API 3.1
-### --> Frontend .Net Core MVC 3.1
+
+### --> ASP.Net Core MVC 3.1
 ### --> Best Practise'lere dayalı
 ### --> Asenkron Programlama
 ### --> N Katmanlı Mimari
