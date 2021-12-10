@@ -42,9 +42,7 @@ C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\bin\Debug\netcoreapp
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\bin\Debug\netcoreapp3.1\AnnualPermissionApp.BLL.dll
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\bin\Debug\netcoreapp3.1\AnnualPermissionApp.BLL.pdb
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\bin\Debug\netcoreapp3.1\AnnualPermissionApp.DAL.dll
-C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\bin\Debug\netcoreapp3.1\AnnualPermissionApp.DTO.dll
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\bin\Debug\netcoreapp3.1\AnnualPermissionApp.Entities.dll
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\bin\Debug\netcoreapp3.1\AnnualPermissionApp.DAL.pdb
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\bin\Debug\netcoreapp3.1\AnnualPermissionApp.Entities.pdb
-C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\bin\Debug\netcoreapp3.1\AnnualPermissionApp.DTO.pdb
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.BLL\obj\Debug\netcoreapp3.1\AnnualPermissionApp.BLL.csproj.CopyComplete

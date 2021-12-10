@@ -7,7 +7,7 @@ namespace PermissionApp.AnnualPermissionApp.Entities.Concrete
     {
         public int Id { get; set; }
         public int EmployeeId { get; set; }
-        public Employee Employees { get; set; }
+        public virtual Employee Employees { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public string RequestPicturePath { get; set; }

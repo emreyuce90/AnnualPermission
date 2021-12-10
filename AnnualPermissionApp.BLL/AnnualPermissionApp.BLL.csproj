@@ -2,7 +2,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AnnualPermissionApp.DAL\AnnualPermissionApp.DAL.csproj" />
     <ProjectReference Include="..\AnnualPermissionApp.Entities\AnnualPermissionApp.Entities.csproj" />
-    <ProjectReference Include="..\AnnualPermissionApp.DTO\AnnualPermissionApp.DTO.csproj" />
+   
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.1.21" />

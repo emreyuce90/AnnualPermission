@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KG/C0ZKs2stMZV69Zt12ihzPUWWfGYwMOJc0x3G9P3pfyOvBE6SgrxO0uULjqLmXrKmdDb18w9WimQC15NHEXQ==",
+  "dgSpecHash": "0GaiiO+q1AGVlIW1ltza/gNq5PfXf3/L/gJbxPWG/MeCbVqfzX5DZlSuXCwTVcdQjLapRoRkKchPX5C/FA7ONg==",
   "success": true,
   "projectFilePath": "C:\\Users\\EMRE\\Desktop\\PermissionApp\\AnnualPermissionApp.DAL\\AnnualPermissionApp.DAL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\EMRE\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -12,6 +13,7 @@
     "C:\\Users\\EMRE\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.21\\microsoft.entityframeworkcore.abstractions.3.1.21.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.21\\microsoft.entityframeworkcore.analyzers.3.1.21.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.21\\microsoft.entityframeworkcore.design.3.1.21.nupkg.sha512",
+    "C:\\Users\\EMRE\\.nuget\\packages\\microsoft.entityframeworkcore.proxies\\3.1.21\\microsoft.entityframeworkcore.proxies.3.1.21.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.21\\microsoft.entityframeworkcore.relational.3.1.21.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.21\\microsoft.entityframeworkcore.sqlserver.3.1.21.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.21\\microsoft.entityframeworkcore.tools.3.1.21.nupkg.sha512",
@@ -60,6 +62,7 @@
     "C:\\Users\\EMRE\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\system.diagnostics.tools\\4.3.0\\system.diagnostics.tools.4.3.0.nupkg.sha512",
+    "C:\\Users\\EMRE\\.nuget\\packages\\system.diagnostics.tracesource\\4.3.0\\system.diagnostics.tracesource.4.3.0.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\system.diagnostics.tracing\\4.3.0\\system.diagnostics.tracing.4.3.0.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\system.dynamic.runtime\\4.3.0\\system.dynamic.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",

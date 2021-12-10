@@ -8,6 +8,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.21"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.1.0-preview1-final"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.21"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="3.1.21"/>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AnnualPermissionApp.Entities\AnnualPermissionApp.Entities.csproj"/>
