@@ -14402,6 +14402,11 @@
   "RootNamespace": "AnnualPermissionApp.UI",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\EMRE\\Desktop\\PermissionApp\\AnnualPermissionApp.UI\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\EMRE\\Desktop\\PermissionApp\\AnnualPermissionApp.UI\\Views\\Employee\\Index.cshtml",
       "TargetPath": "Views\\Employee\\Index.cshtml",
       "FileKind": "mvc"
