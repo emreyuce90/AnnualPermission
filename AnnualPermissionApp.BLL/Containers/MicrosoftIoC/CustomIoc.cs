@@ -1,4 +1,7 @@
 
+using AnnualPermissionApp.BLL.Validators.FluentValidation;
+using AnnualPermissionApp.DTO;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using PermissionApp.AnnualPermissionApp.BLL.Concrete;
@@ -14,6 +17,8 @@ namespace PermissionApp.AnnualPermissionApp.BLL.Containers.MicrosoftIoC
     {
         public static void AddDependencies(this IServiceCollection services)
         {
+            services.AddTransient<IValidator<EmployeeAddDto>,EmployeeAddValidator>();
+            
             services.AddDbContext<PermissionAppContext>( options => options.UseLazyLoadingProxies());
             services.AddScoped(typeof(IGenericService<>), typeof(GenericManager<>));
             services.AddScoped(typeof(IGenericDal<>), typeof(EfGenericRepository<>));

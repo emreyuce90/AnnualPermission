@@ -1,0 +1,38 @@
+@model EmployeeAddDto
+
+<h3 class="text-center">Plasiyer Ekle</h3>
+
+<div asp-validation-summary="All" class="text-danger">
+
+</div>
+
+<form asp-controller="Employee" asp-action="AddEmployee" method="post" class="w-50 shadow mx-auto p-3">
+    <div class="form-group">
+        <label for="@Model.Name">Plasiyerin Adı:</label>
+        <input type="text" asp-for="@Model.Name" class="form-control">
+        <span asp-validation-for="@Model.Name" class="text-danger"></span>
+    </div>
+<br>
+    <div class="form-group">
+        <label for="@Model.Surname">Plasiyerin Soyadı :</label>
+        <input type="text" asp-for="@Model.Surname" class="form-control">
+        <span asp-validation-for="@Model.Surname" class="text-danger"></span>
+    </div>
+<br>
+    <div class="form-group">
+        <label for="@Model.Title">Plasiyerin Ünvanı  :</label>
+        <input type="text" asp-for="@Model.Title" class="form-control">
+        <span asp-validation-for="@Model.Title" class="text-danger"></span>
+    </div>
+<br>
+    <div class="form-group">
+        <label for="@Model.EnterDate">Plasiyerin İşe Giriş Tarihi  :</label>
+        <input type="date" asp-for="@Model.EnterDate" class="form-control">
+        <span asp-validation-for="@Model.EnterDate" class="text-danger"></span>
+    </div>
+    <br>
+    <a class="btn btn-danger" asp-action="Index" asp-controller="Employee">Vazgeç</a>
+<button class="btn btn-success" type="submit">Kaydet</button>
+
+
+</form>

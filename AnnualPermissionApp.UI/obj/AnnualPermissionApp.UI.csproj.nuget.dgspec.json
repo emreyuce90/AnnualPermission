@@ -28,6 +28,9 @@
               "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DAL/AnnualPermissionApp.DAL.csproj": {
                 "projectPath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DAL/AnnualPermissionApp.DAL.csproj"
               },
+              "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DTO/AnnualPermissionApp.DTO.csproj": {
+                "projectPath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DTO/AnnualPermissionApp.DTO.csproj"
+              },
               "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.Entities/AnnualPermissionApp.Entities.csproj": {
                 "projectPath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.Entities/AnnualPermissionApp.Entities.csproj"
               }
@@ -45,7 +48,7 @@
           "dependencies": {
             "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[10.3.4, )"
+              "version": "[10.3.5, )"
             },
             "Microsoft.Extensions.Options.ConfigurationExtensions": {
               "target": "Package",
@@ -151,6 +154,56 @@
         }
       }
     },
+    "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DTO/AnnualPermissionApp.DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DTO/AnnualPermissionApp.DTO.csproj",
+        "projectName": "AnnualPermissionApp.DTO",
+        "projectPath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DTO/AnnualPermissionApp.DTO.csproj",
+        "packagesPath": "/home/emre/.nuget/packages/",
+        "outputPath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DTO/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/emre/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.415/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.Entities/AnnualPermissionApp.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -224,6 +277,9 @@
             "projectReferences": {
               "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.BLL/AnnualPermissionApp.BLL.csproj": {
                 "projectPath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.BLL/AnnualPermissionApp.BLL.csproj"
+              },
+              "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DTO/AnnualPermissionApp.DTO.csproj": {
+                "projectPath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DTO/AnnualPermissionApp.DTO.csproj"
               },
               "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.Entities/AnnualPermissionApp.Entities.csproj": {
                 "projectPath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.Entities/AnnualPermissionApp.Entities.csproj"

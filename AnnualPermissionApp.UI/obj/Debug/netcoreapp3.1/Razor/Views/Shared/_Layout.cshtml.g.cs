@@ -14,13 +14,13 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.UI/Views/_ViewImports.cshtml"
-using PermissionApp.AnnualPermissionApp.UI.Models;
+using AnnualPermissionApp.DTO;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf", @"/Views/Shared/_Layout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0a86e580796668fee0bedf4828b0227a6611697a", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4b7d5af7786bda68d4f7c0735870b5d2cb4ff48e", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("rel", new global::Microsoft.AspNetCore.Html.HtmlString("stylesheet"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -64,7 +64,7 @@ using PermissionApp.AnnualPermissionApp.UI.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<!DOCTYPE html>\n<html lang=\"en\">\n\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf7665", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf7645", async() => {
                 WriteLiteral("\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Plasiyerler</title>\n");
             }
             );
@@ -78,7 +78,7 @@ using PermissionApp.AnnualPermissionApp.UI.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n\n\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf8822", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf8802", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -93,7 +93,7 @@ using PermissionApp.AnnualPermissionApp.UI.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf9920", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf9900", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -108,7 +108,7 @@ using PermissionApp.AnnualPermissionApp.UI.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css\">\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css\">\n\n\n\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf11240", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf11220", async() => {
                 WriteLiteral("\n    \n    <header class=\"header\" id=\"header\">\n        <div class=\"header_toggle\"> <i class=\'bx bx-menu\' id=\"header-toggle\"></i> </div>\n        <div class=\"header_img\"> <img src=\"https://i.imgur.com/hczKIze.jpg\"");
                 BeginWriteAttribute("alt", " alt=\"", 783, "\"", 789, 0);
                 EndWriteAttribute();
@@ -119,7 +119,7 @@ using PermissionApp.AnnualPermissionApp.UI.Models;
             <div> <a href=""#"" class=""nav_logo""> <i class='bx bx-layer nav_logo-icon'></i> <span
                         class=""nav_logo-name"">İzin Takip Programı</span> </a>
                 <div class=""nav_list""> ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf12184", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf12164", async() => {
                     WriteLiteral(" <i class=\'bx bx-grid-alt nav_icon\'></i>\n                        <span class=\"nav_name\">Anasayfa</span> ");
                 }
                 );
@@ -138,7 +138,7 @@ using PermissionApp.AnnualPermissionApp.UI.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral(" ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf13786", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf13766", async() => {
                     WriteLiteral(" <i\n                            class=\'bx bx-user nav_icon\'></i> <span class=\"nav_name\">Plasiyerler</span> ");
                 }
                 );
@@ -157,7 +157,7 @@ using PermissionApp.AnnualPermissionApp.UI.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral(" ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf15391", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf15371", async() => {
                     WriteLiteral(" <i class=\'bx bx-message-square-detail nav_icon\'></i> <span\n                            class=\"nav_name\">İzinler</span> ");
                 }
                 );
@@ -176,7 +176,7 @@ using PermissionApp.AnnualPermissionApp.UI.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral(" ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf17009", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf16989", async() => {
                     WriteLiteral(" <i\n                            class=\'bx bx-bookmark nav_icon\'></i> <span class=\"nav_name\">Bookmark</span> ");
                 }
                 );
@@ -216,7 +216,7 @@ using PermissionApp.AnnualPermissionApp.UI.Models;
 #line hidden
 #nullable disable
                 WriteLiteral("\n \n        </div>\n        </div>\n    </div>\n\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf19624", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "039b6043dc4f641e5ccd5291c8bcf85e3d30e2cf19604", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

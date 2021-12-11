@@ -25,6 +25,7 @@
       "AnnualPermissionApp.UI/1.0.0": {
         "dependencies": {
           "AnnualPermissionApp.BLL": "1.0.0",
+          "AnnualPermissionApp.DTO": "1.0.0",
           "AnnualPermissionApp.Entities": "1.0.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "3.1.21",
@@ -356,41 +357,41 @@
           "lib/netstandard1.5/Castle.Core.dll": {}
         }
       },
-      "FluentValidation/10.3.4": {
+      "FluentValidation/10.3.5": {
         "runtime": {
           "lib/netstandard2.1/FluentValidation.dll": {
             "assemblyVersion": "9.0.0.0",
-            "fileVersion": "10.3.4.0"
+            "fileVersion": "10.3.5.0"
           }
         },
         "compile": {
           "lib/netstandard2.1/FluentValidation.dll": {}
         }
       },
-      "FluentValidation.AspNetCore/10.3.4": {
+      "FluentValidation.AspNetCore/10.3.5": {
         "dependencies": {
-          "FluentValidation": "10.3.4",
-          "FluentValidation.DependencyInjectionExtensions": "10.3.4"
+          "FluentValidation": "10.3.5",
+          "FluentValidation.DependencyInjectionExtensions": "10.3.5"
         },
         "runtime": {
           "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {
             "assemblyVersion": "9.0.0.0",
-            "fileVersion": "10.3.4.0"
+            "fileVersion": "10.3.5.0"
           }
         },
         "compile": {
           "lib/netcoreapp3.1/FluentValidation.AspNetCore.dll": {}
         }
       },
-      "FluentValidation.DependencyInjectionExtensions/10.3.4": {
+      "FluentValidation.DependencyInjectionExtensions/10.3.5": {
         "dependencies": {
-          "FluentValidation": "10.3.4",
+          "FluentValidation": "10.3.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.21"
         },
         "runtime": {
           "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
             "assemblyVersion": "9.0.0.0",
-            "fileVersion": "10.3.4.0"
+            "fileVersion": "10.3.5.0"
           }
         },
         "compile": {
@@ -1779,8 +1780,9 @@
       "AnnualPermissionApp.BLL/1.0.0": {
         "dependencies": {
           "AnnualPermissionApp.DAL": "1.0.0",
+          "AnnualPermissionApp.DTO": "1.0.0",
           "AnnualPermissionApp.Entities": "1.0.0",
-          "FluentValidation.AspNetCore": "10.3.4",
+          "FluentValidation.AspNetCore": "10.3.5",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "3.1.21"
         },
         "runtime": {
@@ -1805,6 +1807,14 @@
         },
         "compile": {
           "AnnualPermissionApp.DAL.dll": {}
+        }
+      },
+      "AnnualPermissionApp.DTO/1.0.0": {
+        "runtime": {
+          "AnnualPermissionApp.DTO.dll": {}
+        },
+        "compile": {
+          "AnnualPermissionApp.DTO.dll": {}
         }
       },
       "AnnualPermissionApp.Entities/1.0.0": {
@@ -3440,26 +3450,26 @@
       "path": "castle.core/4.4.0",
       "hashPath": "castle.core.4.4.0.nupkg.sha512"
     },
-    "FluentValidation/10.3.4": {
+    "FluentValidation/10.3.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hsGRtnhTlCrRbxIOkKp6rCBtkq3UV0i31ckcJtd5j1i99zqLgbQGcbxK0SMU63DIto94f++uIdRpoycu8ySnDQ==",
-      "path": "fluentvalidation/10.3.4",
-      "hashPath": "fluentvalidation.10.3.4.nupkg.sha512"
+      "sha512": "sha512-Mt2CnRqNA5+vXVNFY05yLuOG3OLYR7Q/ZcP/rcJZPNPbg95foVUruyQEmKl1GeXVnT2+u6rjGU2ZCdgF//QU2A==",
+      "path": "fluentvalidation/10.3.5",
+      "hashPath": "fluentvalidation.10.3.5.nupkg.sha512"
     },
-    "FluentValidation.AspNetCore/10.3.4": {
+    "FluentValidation.AspNetCore/10.3.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-YxJ6YH8Oh/DIyHHbjLdQkITGpksihDbznqEbKJy+uPfphdWwtlzaVSx1XyLotSj/bkPXOdLL8w5FPh1TA0Acpw==",
-      "path": "fluentvalidation.aspnetcore/10.3.4",
-      "hashPath": "fluentvalidation.aspnetcore.10.3.4.nupkg.sha512"
+      "sha512": "sha512-fHPayS6k2GbvblzFJjiHNlJT8iQhGkGbSX6Q6JsH6Od2uFDCRaZIj/qSUkCwlCE/cHldmiGbk30LrJyKav9HPg==",
+      "path": "fluentvalidation.aspnetcore/10.3.5",
+      "hashPath": "fluentvalidation.aspnetcore.10.3.5.nupkg.sha512"
     },
-    "FluentValidation.DependencyInjectionExtensions/10.3.4": {
+    "FluentValidation.DependencyInjectionExtensions/10.3.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LS0opGF4r/upI92Y+bToBzFqHYrfuHDWz9z9DN2hUn+/tmt9lN8n0bevyswabdKlTwL6s8vMhVQxHXM8wjOAbQ==",
-      "path": "fluentvalidation.dependencyinjectionextensions/10.3.4",
-      "hashPath": "fluentvalidation.dependencyinjectionextensions.10.3.4.nupkg.sha512"
+      "sha512": "sha512-zGaFLXmf4c+kKqQpT0Ec1T97kbJMx9o25+0l6p/TYFQ99bHSLPmgpd8EjU6s7cXv9X/215mIlrazMkzvbCZFWg==",
+      "path": "fluentvalidation.dependencyinjectionextensions/10.3.5",
+      "hashPath": "fluentvalidation.dependencyinjectionextensions.10.3.5.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.Razor.Extensions/3.1.21": {
       "type": "package",
@@ -4307,6 +4317,11 @@
       "sha512": ""
     },
     "AnnualPermissionApp.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AnnualPermissionApp.DTO/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "rhQ/Bf7AhjoXnWR3VcYOs7gBVBd3IV2OzO42mJTPsLnTn5AFg0OEZzAXLEVMaXPAnv4o6GuN85PnghV1is+cIg==",
+  "dgSpecHash": "lCWVtmqDRhOZC32PTDkJXFJWWYlm3rgv0aVxaloTIwmt7KnmG7Nmi9Z3zdq5MauhxWMIIvpYhy0Hk6+OGsiIYA==",
   "success": true,
   "projectFilePath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.BLL/AnnualPermissionApp.BLL.csproj",
   "expectedPackageFiles": [
     "/home/emre/.nuget/packages/castle.core/4.4.0/castle.core.4.4.0.nupkg.sha512",
-    "/home/emre/.nuget/packages/fluentvalidation/10.3.4/fluentvalidation.10.3.4.nupkg.sha512",
-    "/home/emre/.nuget/packages/fluentvalidation.aspnetcore/10.3.4/fluentvalidation.aspnetcore.10.3.4.nupkg.sha512",
-    "/home/emre/.nuget/packages/fluentvalidation.dependencyinjectionextensions/10.3.4/fluentvalidation.dependencyinjectionextensions.10.3.4.nupkg.sha512",
+    "/home/emre/.nuget/packages/fluentvalidation/10.3.5/fluentvalidation.10.3.5.nupkg.sha512",
+    "/home/emre/.nuget/packages/fluentvalidation.aspnetcore/10.3.5/fluentvalidation.aspnetcore.10.3.5.nupkg.sha512",
+    "/home/emre/.nuget/packages/fluentvalidation.dependencyinjectionextensions/10.3.5/fluentvalidation.dependencyinjectionextensions.10.3.5.nupkg.sha512",
     "/home/emre/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/home/emre/.nuget/packages/microsoft.bcl.hashcode/1.1.1/microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "/home/emre/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
