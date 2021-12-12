@@ -15,6 +15,9 @@ namespace PermissionApp.AnnualPermissionApp.UI.AutoMapper
             
             CreateMap<Employee,EmployeeAddDto>();
             CreateMap<EmployeeAddDto,Employee>();
+
+            CreateMap<EmployeeUpdateDto,Employee>();
+            CreateMap<Employee,EmployeeUpdateDto>();
         }
     }
 }

@@ -14407,6 +14407,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.UI/Views/Employee/UpdateEmployee.cshtml",
+      "TargetPath": "Views\\Employee\\UpdateEmployee.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.UI/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"

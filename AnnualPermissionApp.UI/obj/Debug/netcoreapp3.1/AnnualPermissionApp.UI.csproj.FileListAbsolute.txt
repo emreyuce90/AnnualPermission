@@ -786,3 +786,4 @@ C:/Users/EMRE/Desktop/PermissionApp/AnnualPermissionApp.UI/obj/Debug/netcoreapp3
 /home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.UI/obj/Debug/netcoreapp3.1/Razor/Views/Employee/AddEmployee.cshtml.g.cs
 /home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.UI/bin/Debug/netcoreapp3.1/AnnualPermissionApp.DTO.dll
 /home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.UI/bin/Debug/netcoreapp3.1/AnnualPermissionApp.DTO.pdb
+/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.UI/obj/Debug/netcoreapp3.1/Razor/Views/Employee/UpdateEmployee.cshtml.g.cs

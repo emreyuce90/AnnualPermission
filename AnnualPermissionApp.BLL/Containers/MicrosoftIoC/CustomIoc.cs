@@ -17,9 +17,9 @@ namespace PermissionApp.AnnualPermissionApp.BLL.Containers.MicrosoftIoC
     {
         public static void AddDependencies(this IServiceCollection services)
         {
-            services.AddTransient<IValidator<EmployeeAddDto>,EmployeeAddValidator>();
-            
-            services.AddDbContext<PermissionAppContext>( options => options.UseLazyLoadingProxies());
+            services.AddTransient<IValidator<EmployeeAddDto>, EmployeeAddValidator>();
+
+            services.AddDbContext<PermissionAppContext>(options => options.UseLazyLoadingProxies());
             services.AddScoped(typeof(IGenericService<>), typeof(GenericManager<>));
             services.AddScoped(typeof(IGenericDal<>), typeof(EfGenericRepository<>));
 
@@ -36,8 +36,8 @@ namespace PermissionApp.AnnualPermissionApp.BLL.Containers.MicrosoftIoC
             services.AddScoped<IPermissionService, PermissionManager>();
             services.AddScoped<IPermissionDal, EfPermissionRepository>();
 
-   
-            
+
+
 
         }
     }

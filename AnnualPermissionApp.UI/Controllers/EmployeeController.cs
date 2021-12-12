@@ -32,12 +32,36 @@ namespace PermissionApp.AnnualPermissionApp.UI.Controllers
         [HttpPost]
         public async Task<IActionResult> AddEmployee(EmployeeAddDto model)
         {
-            if(ModelState.IsValid){
+            if (ModelState.IsValid)
+            {
                 //DO İT
-               await _employeeService.AddAsync(_mapper.Map<Employee>(model));
-               return RedirectToAction("Index");
+                await _employeeService.AddAsync(_mapper.Map<Employee>(model));
+                return RedirectToAction("Index");
             }
-            
+
+            return View(model);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> UpdateEmployee(int id)
+        {
+            var emp = await _employeeService.GetByIdAsync(id);
+            if (emp != null)
+            {
+                return View(_mapper.Map<EmployeeUpdateDto>(emp));
+            }
+            //Loglama yapılacak
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateEmployee(EmployeeUpdateDto model)
+        {
+            if (ModelState.IsValid)
+            {
+                await _employeeService.UpdateAsync(_mapper.Map<Employee>(model));
+                return RedirectToAction("Index");
+            }
             return View(model);
         }
     }
