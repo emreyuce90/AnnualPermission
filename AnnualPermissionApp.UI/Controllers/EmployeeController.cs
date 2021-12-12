@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using AnnualPermissionApp.DTO;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using PermissionApp.AnnualPermissionApp.BLL.Interfaces;
 using PermissionApp.AnnualPermissionApp.Entities.Concrete;
 
@@ -11,13 +12,23 @@ namespace PermissionApp.AnnualPermissionApp.UI.Controllers
 {
     public class EmployeeController : Controller
     {
-        private IMapper _mapper;
+        private readonly IConfiguration _configuration;
+        private readonly IMapper _mapper;
         private readonly IGenericService<Employee> _employeeService;
-        public EmployeeController(IGenericService<Employee> employeeService, IMapper mapper)
+        public EmployeeController(IGenericService<Employee> employeeService, IMapper mapper,IConfiguration configuration)
         {
             _employeeService = employeeService;
             _mapper = mapper;
+            _configuration = configuration;
         }
+        
+        [HttpGet]
+        public IActionResult Test()
+        {
+          var email=_configuration["Workers:Email"];
+            return View();
+        }
+
         public async Task<IActionResult> Index()
         {
             return View(_mapper.Map<List<EmployeeListDto>>(await _employeeService.GetAllAsync()));
