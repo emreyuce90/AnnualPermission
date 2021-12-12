@@ -14400,6 +14400,47 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "AnnualPermissionApp.UI",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.UI/Views/Employee/AddEmployee.cshtml",
+      "TargetPath": "Views\\Employee\\AddEmployee.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.UI/Views/Employee/UpdateEmployee.cshtml",
+      "TargetPath": "Views\\Employee\\UpdateEmployee.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.UI/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.UI/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.UI/Views/Employee/Index.cshtml",
+      "TargetPath": "Views\\Employee\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.UI/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.UI/Views/Employee/Test.cshtml",
+      "TargetPath": "Views\\Employee\\Test.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.UI/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }
