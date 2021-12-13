@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NMaOotsXck3Q6LD7cOhnnhwBsFJbjthXpNuKi/7j1cl9n7pUdso5HDYyWcidZTCTRraPHdFbI2uj7ir7iVyXmA==",
+  "dgSpecHash": "urYdwNGLYevjfyVZ+KOGKyaQVtnsKvKRllh+FrdGv3Lq66tCKBM3UjSVmi7vsJWXQ8T76Ozn9neWovFHHq2s7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj",
+  "projectFilePath": "/home/emre/Desktop/AnnualPermission/AnnualPermissionApp.Entities/AnnualPermissionApp.Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

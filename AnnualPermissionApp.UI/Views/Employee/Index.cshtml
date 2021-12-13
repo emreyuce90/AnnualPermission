@@ -56,7 +56,7 @@
                     }
                 }
                 <td>
-                    <a class="btn btn-warning btn-sm text-white" asp-route-id="@item.Id"><i class="fas fa-plus p-1"></i>İzin
+                    <a class="btn btn-warning btn-sm text-white" asp-route-id="@item.Id"><i class="fas fa-plus p-1" asp-controller="Permission" asp-action="AddPermission"></i>İzin
                         Ekle</a>
                     <a class="btn btn-info btn-sm text-white" asp-action="UpdateEmployee" asp-route-id="@item.Id"
                     asp-controller="Employee"><i class="fas fa-edit p-1"></i></a>
