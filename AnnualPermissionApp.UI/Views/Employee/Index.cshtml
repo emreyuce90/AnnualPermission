@@ -93,33 +93,29 @@
         </div>
     </div>
 </div>
+
 @section Javascript{
 <script type="text/javascript">
-    $(document).ready(
-        function () {
-            $("#myModal").on('show.bs.modal',
-                function (event) {
-                    let btn = $(event.relatedTarget);
-                    let ids = btn.data('employee');
-                    $("#btnSil").click(function(){
-                        $.ajax({
-                            method:"GET",
-                            url:"./DeleteEmployee/",
-                            data:{
-                                id:ids
-                            },
-                            contentType:"application/json;charset=utf-8",
-                            success:function(){
-                                window.location.reload();
-                            },
-                            error:function(err){
-                                alert(err.statusText);
-                            }
-                        })
-                    })
-                }
-            )
-        }
-    );
+    $(document).ready(function () {
+        $("#myModal").on('shown.bs.modal', function (event) {
+            let btn = $(event.relatedTarget);
+            let id =btn.data('employee');
+            $("#btnSil").click(function(){
+                $.ajax({
+                    type:"get",
+                    url:"./Employee/DeleteEmployee/"+id,
+                    
+                    contentType:"application/json;charset=utf-8;",
+                    success:function(){
+                        window.location.reload();
+                    },
+                    error: function(err){
+                        console.log(err.statusText);
+                        alert(err.statusText);
+                    }
+                });
+            });
+        });
+    });
 </script>
 }

@@ -76,15 +76,15 @@ namespace PermissionApp.AnnualPermissionApp.UI.Controllers
             return View(model);
         }
 
-        [HttpDelete]
+        [HttpGet]
         public async Task<IActionResult> DeleteEmployee(int id){
 
-            var emp =await _employeeService.GetByIdAsync(id);
-            if(emp != null){
+            
+            if(id != 0){
                 await _employeeService.DeleteAsync(new Employee {Id = id});
-                return NoContent();
+                return Json(null);
             }
-            return NotFound();
+            return BadRequest("Silmek istediğiniz plasiyer veritabanımızda kayıtl değil");
         }
     }
 }
