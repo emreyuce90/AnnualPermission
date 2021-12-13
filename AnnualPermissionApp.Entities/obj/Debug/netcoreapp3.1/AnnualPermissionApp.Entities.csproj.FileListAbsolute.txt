@@ -27,3 +27,13 @@ C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.Entities\obj\Debug\netco
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.Entities\obj\Debug\netcoreapp3.1\AnnualPermissionApp.Entities.dll
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.Entities\obj\Debug\netcoreapp3.1\AnnualPermissionApp.Entities.pdb
 C:\Users\EMRE\Desktop\PermissionApp\AnnualPermissionApp.Entities\obj\Debug\netcoreapp3.1\AnnualPermissionApp.Entities.csproj.AssemblyReference.cache
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.Entities\bin\Debug\netcoreapp3.1\AnnualPermissionApp.Entities.deps.json
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.Entities\bin\Debug\netcoreapp3.1\AnnualPermissionApp.Entities.dll
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.Entities\bin\Debug\netcoreapp3.1\AnnualPermissionApp.Entities.pdb
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.Entities\obj\Debug\netcoreapp3.1\AnnualPermissionApp.Entities.csproj.AssemblyReference.cache
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.Entities\obj\Debug\netcoreapp3.1\AnnualPermissionApp.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.Entities\obj\Debug\netcoreapp3.1\AnnualPermissionApp.Entities.AssemblyInfoInputs.cache
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.Entities\obj\Debug\netcoreapp3.1\AnnualPermissionApp.Entities.AssemblyInfo.cs
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.Entities\obj\Debug\netcoreapp3.1\AnnualPermissionApp.Entities.csproj.CoreCompileInputs.cache
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.Entities\obj\Debug\netcoreapp3.1\AnnualPermissionApp.Entities.dll
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.Entities\obj\Debug\netcoreapp3.1\AnnualPermissionApp.Entities.pdb

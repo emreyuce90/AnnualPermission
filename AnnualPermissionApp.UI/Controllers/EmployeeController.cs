@@ -75,5 +75,16 @@ namespace PermissionApp.AnnualPermissionApp.UI.Controllers
             }
             return View(model);
         }
+
+        [HttpDelete]
+        public async Task<IActionResult> DeleteEmployee(int id){
+
+            var emp = _employeeService.GetByIdAsync(id);
+            if(emp != null){
+                await _employeeService.DeleteAsync(new Employee {Id = id});
+                return NoContent();
+            }
+            return NotFound();
+        }
     }
 }
