@@ -79,7 +79,7 @@ namespace PermissionApp.AnnualPermissionApp.UI.Controllers
         [HttpDelete]
         public async Task<IActionResult> DeleteEmployee(int id){
 
-            var emp = _employeeService.GetByIdAsync(id);
+            var emp =await _employeeService.GetByIdAsync(id);
             if(emp != null){
                 await _employeeService.DeleteAsync(new Employee {Id = id});
                 return NoContent();
