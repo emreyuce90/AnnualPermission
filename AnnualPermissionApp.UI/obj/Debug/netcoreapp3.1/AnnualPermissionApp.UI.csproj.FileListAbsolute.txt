@@ -1585,3 +1585,5 @@ C:/Users/EMRE/Desktop/AnnualPermission/AnnualPermissionApp.UI/obj/Debug/netcorea
 /home/emre/Desktop/AnnualPermission/AnnualPermissionApp.UI/obj/Debug/netcoreapp3.1/AnnualPermissionApp.UI.pdb
 /home/emre/Desktop/AnnualPermission/AnnualPermissionApp.UI/obj/Debug/netcoreapp3.1/AnnualPermissionApp.UI.genruntimeconfig.cache
 /home/emre/Desktop/AnnualPermission/AnnualPermissionApp.UI/obj/Debug/netcoreapp3.1/Razor/Views/Permission/AddPermission.cshtml.g.cs
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\AnnualPermissionApp.UI.dll
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\AnnualPermissionApp.UI.pdb

@@ -76,3 +76,10 @@ C:/Users/EMRE/Desktop/AnnualPermission/AnnualPermissionApp.DAL/obj/Debug/netcore
 /home/emre/Desktop/AnnualPermission/AnnualPermissionApp.DAL/obj/Debug/netcoreapp3.1/AnnualPermissionApp.DAL.dll
 /home/emre/Desktop/AnnualPermission/AnnualPermissionApp.DAL/obj/Debug/netcoreapp3.1/AnnualPermissionApp.DAL.pdb
 /home/emre/Desktop/AnnualPermission/AnnualPermissionApp.DAL/obj/Debug/netcoreapp3.1/AnnualPermissionApp.DAL.genruntimeconfig.cache
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.DAL\obj\Debug\netcoreapp3.1\AnnualPermissionApp.DAL.csproj.AssemblyReference.cache
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.DAL\obj\Debug\netcoreapp3.1\AnnualPermissionApp.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.DAL\obj\Debug\netcoreapp3.1\AnnualPermissionApp.DAL.AssemblyInfoInputs.cache
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.DAL\obj\Debug\netcoreapp3.1\AnnualPermissionApp.DAL.AssemblyInfo.cs
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.DAL\obj\Debug\netcoreapp3.1\AnnualPermissionApp.DAL.csproj.CoreCompileInputs.cache
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.DAL\obj\Debug\netcoreapp3.1\AnnualPermissionApp.DAL.dll
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.DAL\obj\Debug\netcoreapp3.1\AnnualPermissionApp.DAL.pdb

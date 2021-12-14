@@ -79,3 +79,5 @@ C:/Users/EMRE/Desktop/AnnualPermission/AnnualPermissionApp.BLL/obj/Debug/netcore
 /home/emre/Desktop/AnnualPermission/AnnualPermissionApp.BLL/obj/Debug/netcoreapp3.1/AnnualPermissionApp.BLL.csproj.CopyComplete
 /home/emre/Desktop/AnnualPermission/AnnualPermissionApp.BLL/obj/Debug/netcoreapp3.1/AnnualPermissionApp.BLL.dll
 /home/emre/Desktop/AnnualPermission/AnnualPermissionApp.BLL/obj/Debug/netcoreapp3.1/AnnualPermissionApp.BLL.pdb
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.BLL\obj\Debug\netcoreapp3.1\AnnualPermissionApp.BLL.dll
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.BLL\obj\Debug\netcoreapp3.1\AnnualPermissionApp.BLL.pdb
