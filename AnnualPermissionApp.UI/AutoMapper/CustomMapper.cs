@@ -1,4 +1,5 @@
 using AnnualPermissionApp.DTO;
+using AnnualPermissionApp.UI.Models;
 using AutoMapper;
 using PermissionApp.AnnualPermissionApp.Entities.Concrete;
 
@@ -18,6 +19,14 @@ namespace PermissionApp.AnnualPermissionApp.UI.AutoMapper
 
             CreateMap<EmployeeUpdateDto,Employee>();
             CreateMap<Employee,EmployeeUpdateDto>();
+
+            CreateMap<Permission,PermissionAddModel>();
+            CreateMap<PermissionAddModel,Permission>();
+
+            CreateMap<Permission,PermissionListDto>();
+            CreateMap<PermissionListDto,Permission>();
+
+        
         }
     }
 }

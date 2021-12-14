@@ -1,7 +1,7 @@
 @model List<EmployeeListDto>
 
 <div class="text-center">
-    <h2 class="">Plasiyerler</h2>
+    <h2 class=""><i class="fas fa-address-card"></i> Plasiyerler</h2>
 </div>
 <div class="text-center  mt-4">
     <a class="btn btn-success" asp-action="AddEmployee" asp-controller="Employee">
@@ -18,10 +18,10 @@
             <th>Plasiyer Soyadı</th>
             <th>Plasiyer Ünvanı</th>
             <th>İşe Giriş Tarihi</th>
-            <th>Kaç Yıl?</th>
-
+            <th>Çalışma Zamanı</th>
             <th>Kanuni izin hakkı</th>
-
+            <th>Kullandığı İzinler</th>
+            
             <th>İşlemler</th>
         </tr>
     </thead>
@@ -35,7 +35,7 @@
                 <td>@item.Surname</td>
                 <td>@item.Title</td>
                 <td>@item.EnterDate.ToString("yyyy")</td>
-                <td>@(DateTime.Now.Year - item.EnterDate.Year)</td>
+                <td>@(DateTime.Now.Year - item.EnterDate.Year) YIL</td>
                 @{
                     if ((DateTime.Now.Year - item.EnterDate.Year) <= 1)
                     {
@@ -55,9 +55,14 @@
                         <td>26 GÜN</td>
                     }
                 }
+                    <permission-year-count employee-id="@item.Id">
+                    </permission-year-count>
+                                            
+                   
+
                 <td>
-                    <a class="btn btn-warning btn-sm text-white" asp-route-id="@item.Id"><i class="fas fa-plus p-1" asp-controller="Permission" asp-action="AddPermission"></i>İzin
-                        Ekle</a>
+                    <a class="text-info"asp-controller='Permission' asp-action='GetPermissionList' asp-route-id='@item.Id'><i class='fas fa-info-circle'></i></a>
+                    <a  asp-controller="Permission" asp-action="AddPermission" class="btn btn-warning btn-sm text-white" asp-route-id="@item.Id"><i class="fas fa-plus p-1"></i></a>
                     <a class="btn btn-info btn-sm text-white" asp-action="UpdateEmployee" asp-route-id="@item.Id"
                     asp-controller="Employee"><i class="fas fa-edit p-1"></i></a>
                     <a asp-controller="Employee" data-bs-toggle="modal" data-bs-target="#myModal"
@@ -93,6 +98,10 @@
         </div>
     </div>
 </div>
+
+
+
+
 
 @section Javascript{
 <script type="text/javascript">

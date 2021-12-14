@@ -1,0 +1,34 @@
+@model List<PermissionListDto>
+
+
+<h3 class="text-center">Kullanılan İzinler</h3>    
+<table class="table table-light table-responsive table-hover table-striped">
+    <thead>
+        <tr>
+            <th>İzin ID :</th>
+            <th>İzin Başlangıç Tarihi :</th>
+            <th>İzin Bitiş Tarihi :</th>
+            <th>Dilekçe Görseli :</th>
+            <th>Kullandığı İzin Sayısı :</th>
+            <th>İzin Tanımı :</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var izin in Model)
+        {
+        <tr>
+            
+            <td>@izin.Id</td>
+            <td>@izin.StartDate.ToString("dd/mm/yyyy")</td>
+            <td>@izin.EndDate.ToString("dd/mm/yyyy")</td>
+            <td>
+                <a href="~/image/@izin.RequestPicturePath"><img class="w-25" src="~/image/@izin.RequestPicturePath" alt=""></a>
+            </td>
+            <td>@izin.DaysCount</td>
+            <td>@izin.Description</td>
+        </tr>
+        }
+
+    </tbody>
+</table>

@@ -1585,3 +1585,5 @@ C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcorea
 C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\AnnualPermissionApp.UI.Views.pdb
 C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\AnnualPermissionApp.UI.csproj.CopyComplete
 C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\AnnualPermissionApp.UI.genruntimeconfig.cache
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\AnnualPermissionApp.UI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Permission\GetPermissionList.cshtml.g.cs

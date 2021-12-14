@@ -7,5 +7,7 @@ namespace PermissionApp.AnnualPermissionApp.BLL.Interfaces
     public interface IPermissionService : IGenericService<Permission>
     {
         Task<List<Permission>> GetPermissionsWEmployeesAsync();
+        Task <int> CountThisYearPermissions(int id);
+        Task<List<Permission>> GetPermissionsByEmployeeIdAsync(int id);
     }
 }

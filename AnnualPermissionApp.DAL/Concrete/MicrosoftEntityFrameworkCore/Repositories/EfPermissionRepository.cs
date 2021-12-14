@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using PermissionApp.AnnualPermissionApp.DAL.Concrete.MicrosoftEntityFrameworkCore.Repositories.DatabaseContext;
@@ -15,9 +17,21 @@ namespace PermissionApp.AnnualPermissionApp.DAL.Concrete.MicrosoftEntityFramewor
             _context = context;
         }
 
+        public async Task<int> CountThisYearPermissions(int id)
+        {
+            //Dilekçe başlangıç tarihi yılı içerisinde bulunduğumuz yıla eşit olmalı
+            //bu bize 2021'in verilerini geri dönecek
+           return await _context.Permissions.Where(I=>I.StartDate.Year == DateTime.Now.Year && I.EmployeeId==id).SumAsync(I=>I.DaysCount);
+        }
+
+        public async Task<List<Permission>> GetPermissionsByEmployeeIdAsync(int id)
+        {
+            return await _context.Permissions.Include(I=>I.Employees).Where(I=>I.EmployeeId == id).ToListAsync();
+        }
+
         public async Task<List<Permission>> GetPermissionsWEmployeesAsync()
         {
-            var permissions = await _context.Permissions.Include(I=>I.Employees).ToListAsync();
+            var permissions = await _context.Permissions.ToListAsync();
            return permissions;
         }
     }
