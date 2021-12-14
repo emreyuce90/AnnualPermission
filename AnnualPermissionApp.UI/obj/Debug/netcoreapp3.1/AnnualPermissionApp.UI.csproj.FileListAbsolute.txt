@@ -1587,3 +1587,11 @@ C:/Users/EMRE/Desktop/AnnualPermission/AnnualPermissionApp.UI/obj/Debug/netcorea
 /home/emre/Desktop/AnnualPermission/AnnualPermissionApp.UI/obj/Debug/netcoreapp3.1/Razor/Views/Permission/AddPermission.cshtml.g.cs
 C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\AnnualPermissionApp.UI.dll
 C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\AnnualPermissionApp.UI.pdb
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\AnnualPermissionApp.UI.csproj.AssemblyReference.cache
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\AnnualPermissionApp.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\AnnualPermissionApp.UI.AssemblyInfoInputs.cache
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\AnnualPermissionApp.UI.AssemblyInfo.cs
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\AnnualPermissionApp.UI.csproj.CoreCompileInputs.cache
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\AnnualPermissionApp.UI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\AnnualPermissionApp.UI.RazorAssemblyInfo.cache
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\AnnualPermissionApp.UI.RazorAssemblyInfo.cs

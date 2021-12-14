@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("AnnualPermissionApp.BLL")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("AnnualPermissionApp.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("AnnualPermissionApp.BLL")]
-[assembly: System.Reflection.AssemblyTitleAttribute("AnnualPermissionApp.BLL")]
+[assembly: System.Reflection.AssemblyProductAttribute("AnnualPermissionApp.DAL")]
+[assembly: System.Reflection.AssemblyTitleAttribute("AnnualPermissionApp.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // MSBuild WriteCodeFragment sınıfı tarafından oluşturuldu.
