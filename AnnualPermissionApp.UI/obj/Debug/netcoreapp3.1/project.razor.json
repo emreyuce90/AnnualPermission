@@ -12458,6 +12458,38 @@
         }
       },
       {
+        "HashCode": -500648119,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__UserViewComponentTagHelper",
+        "AssemblyName": "AnnualPermissionApp.UI",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:user",
+            "Attributes": [
+              {
+                "Name": "id"
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "MVC.ViewComponent",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__UserViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "User"
+        }
+      },
+      {
         "HashCode": 141407075,
         "Kind": "Components.Bind",
         "Name": "Bind",
@@ -14470,6 +14502,11 @@
     {
       "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Views\\Employee\\UpdateEmployee.cshtml",
       "TargetPath": "Views\\Employee\\UpdateEmployee.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Views\\Shared\\Components\\UserView\\Default.cshtml",
+      "TargetPath": "Views\\Shared\\Components\\UserView\\Default.cshtml",
       "FileKind": "mvc"
     },
     {

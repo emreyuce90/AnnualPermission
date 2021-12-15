@@ -64,7 +64,7 @@ namespace AnnualPermissionApp.UI.Controllers
         [HttpGet]
         public async Task<IActionResult> GetPermissionList(int id)
         {
-            
+            ViewBag.Id = id;
             return View(_mapper.Map<List<PermissionListDto>>(await _permissionService.GetPermissionsByEmployeeIdAsync(id)));
         }
     }

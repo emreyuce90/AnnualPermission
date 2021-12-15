@@ -1,34 +1,40 @@
 @model List<PermissionListDto>
 
+@await Component.InvokeAsync("User",@ViewBag.Id)
 
-<h3 class="text-center">Kullanılan İzinler</h3>    
+
+
+<div class="mt-5">
+<h1 class="text-center display-6">Kullanılan İzinler</h1>
 <table class="table table-light table-responsive table-hover table-striped">
-    <thead>
-        <tr>
-            <th>İzin ID :</th>
-            <th>İzin Başlangıç Tarihi :</th>
-            <th>İzin Bitiş Tarihi :</th>
-            <th>Dilekçe Görseli :</th>
-            <th>Kullandığı İzin Sayısı :</th>
-            <th>İzin Tanımı :</th>
+  <thead>
+    <tr>
+      <th>İzin ID :</th>
+      <th>İzin Başlangıç Tarihi :</th>
+      <th>İzin Bitiş Tarihi :</th>
+      <th>Dilekçe Eki :</th>
+      <th>Kullandığı İzin Sayısı :</th>
+      <th>İzin Tanımı :</th>
 
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var izin in Model)
-        {
-        <tr>
-            
-            <td>@izin.Id</td>
-            <td>@izin.StartDate.ToString("dd/mm/yyyy")</td>
-            <td>@izin.EndDate.ToString("dd/mm/yyyy")</td>
-            <td>
-                <a href="~/image/@izin.RequestPicturePath"><img class="w-25" src="~/image/@izin.RequestPicturePath" alt=""></a>
-            </td>
-            <td>@izin.DaysCount</td>
-            <td>@izin.Description</td>
-        </tr>
-        }
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var izin in Model)
+    {
+      <tr>
 
-    </tbody>
+        <td>@izin.Id</td>
+        <td>@izin.StartDate.ToString("dd/mm/yyyy")</td>
+        <td>@izin.EndDate.ToString("dd/mm/yyyy")</td>
+        <td>
+          <a href="~/image/@izin.RequestPicturePath" target="_blank">Dilekçe Eki</a>
+
+        </td>
+        <td>@izin.DaysCount</td>
+        <td>@izin.Description</td>
+      </tr>
+    }
+
+  </tbody>
 </table>
+</div>
