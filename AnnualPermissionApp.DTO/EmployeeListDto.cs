@@ -1,14 +1,18 @@
 using System;
 
-namespace AnnualPermissionApp.DTO{
-    public class EmployeeListDto{
-        
-    
+namespace AnnualPermissionApp.DTO
+{
+    public class EmployeeListDto
+    {
         public int Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Title { get; set; }
         public DateTime EnterDate { get; set; }
-    
+        public int LegalPermission { get; set; }
     }
 }
+
+    
+
+

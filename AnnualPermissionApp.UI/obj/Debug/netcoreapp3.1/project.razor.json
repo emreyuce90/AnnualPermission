@@ -14500,13 +14500,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Views\\Employee\\UpdateEmployee.cshtml",
-      "TargetPath": "Views\\Employee\\UpdateEmployee.cshtml",
+      "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Views\\Shared\\Components\\User\\Default.cshtml",
+      "TargetPath": "Views\\Shared\\Components\\User\\Default.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Views\\Shared\\Components\\UserView\\Default.cshtml",
-      "TargetPath": "Views\\Shared\\Components\\UserView\\Default.cshtml",
+      "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Views\\Employee\\UpdateEmployee.cshtml",
+      "TargetPath": "Views\\Employee\\UpdateEmployee.cshtml",
       "FileKind": "mvc"
     },
     {

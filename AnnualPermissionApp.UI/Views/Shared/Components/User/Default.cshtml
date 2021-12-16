@@ -1,7 +1,7 @@
 @model EmployeeListDto
 
 
-<div class="card mb-3" style="max-width: 840px;">
+<div class="card mb-3">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="~/image/user.jpg" class="img-fluid rounded-start" alt="...">
@@ -10,13 +10,13 @@
       <div class="card-body">
         <a class="float-end" asp-action="UpdateEmployee" asp-controller="Employee" asp-route-id="@ViewBag.Id"><i
             class="fas fa-edit"></i>Düzenle</a>
-        <h5 class="card-title">Çalışan Bilgileri</h5>
+        <h5 class="card-title text-center display-6">Çalışan Bilgileri</h5>
 
         <ul class="list-group list-group-flush">
           <li class="list-group-item"><strong>Adı:</strong><span style="margin-left: 7vw;">@Model.Name</span></li>
           <li class="list-group-item"><strong>Soyadı:</strong><span style="margin-left: 5vw;" >@Model.Surname</span></li>
           <li class="list-group-item"><strong>Görevi:</strong><span style="margin-left: 5vw;">@Model.Title</span></li>
-          <li class="list-group-item"><strong>İşe Giriş Tarihi:</strong><span style="margin-left: 1vw;">@Model.EnterDate.ToString("dd/mm/yyyy")</span></li>
+          <li class="list-group-item"><strong>İşe Giriş Tarihi:</strong><span style="margin-left: 1vw;">@Model.EnterDate.ToString("dd/MM/yyyy")</span></li>
 
         </ul>
 

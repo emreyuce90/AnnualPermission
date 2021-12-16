@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AnnualPermissionApp.DTO;
@@ -15,23 +16,48 @@ namespace PermissionApp.AnnualPermissionApp.UI.Controllers
         private readonly IConfiguration _configuration;
         private readonly IMapper _mapper;
         private readonly IGenericService<Employee> _employeeService;
-        public EmployeeController(IGenericService<Employee> employeeService, IMapper mapper,IConfiguration configuration)
+        public EmployeeController(IGenericService<Employee> employeeService, IMapper mapper, IConfiguration configuration)
         {
             _employeeService = employeeService;
             _mapper = mapper;
             _configuration = configuration;
         }
-        
-        [HttpGet]
-        public IActionResult Test()
-        {
-          var email=_configuration["Workers:Email"];
-            return View();
-        }
 
         public async Task<IActionResult> Index()
         {
-            return View(_mapper.Map<List<EmployeeListDto>>(await _employeeService.GetAllAsync()));
+            //dbden gelen data
+            var employeeList = await _employeeService.GetAllAsync();
+            //dto katmanımız
+            List<EmployeeListDto> emp = new List<EmployeeListDto>();
+            //iterating db list
+            foreach (var employee in employeeList)
+            {
+                EmployeeListDto e = new EmployeeListDto();
+                e.Id = employee.Id;
+                e.Name = employee.Name;
+                e.Surname = employee.Surname;
+                e.Title = employee.Title;
+                e.EnterDate = employee.EnterDate;
+                //! Mantığı kontrol et
+                if (DateTime.Now.Year - employee.EnterDate.Year <= 1)
+                {
+                    e.LegalPermission = 0;
+                }
+                else if (DateTime.Now.Year - employee.EnterDate.Year <= 5)
+                {
+                    e.LegalPermission = 14;
+                }
+                else if (DateTime.Now.Year - employee.EnterDate.Year > 5)
+                {
+                    e.LegalPermission = 20;
+                }
+                else
+                {
+                    e.LegalPermission = 26;
+                }
+                emp.Add(e);
+            }
+            return View(emp);
         }
 
         [HttpGet]
@@ -77,11 +103,13 @@ namespace PermissionApp.AnnualPermissionApp.UI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> DeleteEmployee(int id){
+        public async Task<IActionResult> DeleteEmployee(int id)
+        {
 
-            
-            if(id != 0){
-                await _employeeService.DeleteAsync(new Employee {Id = id});
+
+            if (id != 0)
+            {
+                await _employeeService.DeleteAsync(new Employee { Id = id });
                 return Json(null);
             }
             return BadRequest("Silmek istediğiniz plasiyer veritabanımızda kayıtl değil");
