@@ -27,6 +27,7 @@ namespace PermissionApp.AnnualPermissionApp.UI.Controllers
         {
             //dbden gelen data
             var employeeList = await _employeeService.GetAllAsync();
+            
             //dto katmanımız
             List<EmployeeListDto> emp = new List<EmployeeListDto>();
             //iterating db list

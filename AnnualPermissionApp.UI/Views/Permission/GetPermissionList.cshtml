@@ -2,7 +2,21 @@
 
 @await Component.InvokeAsync("User",@ViewBag.Id)
 
+@*
+  ViewComponent ile basabiliriz
 
+  İzin bilgileri burada yazsın
+  Bu yıl izin hakkı:14  //EnterDateTime 'a göre basılacak'
+  Bu yıl kullandığı izinler: 10 //permission yıla göre ,employeeId parametresi ile alıancak
+  Bu yıldan kalan izin hakkı:14-10
+
+  Geçen yıl kullandığı izinler:24 //yukarıdakinin aynısı
+  Geçen yıl izin hakkı: 20 EnterDate ile çözülecek
+  Geçen yıldan kalan izin hakkı:4
+
+  Toplam izin hakkınız : Bu yıldan kalan izin hakkı - geçen yıldan kalan izin hakkı
+
+*@
 
 <div class="mt-5">
 <h1 class="text-center display-6">Kullanılan İzinler</h1>
