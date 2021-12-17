@@ -8,6 +8,7 @@ namespace PermissionApp.AnnualPermissionApp.DAL.Interfaces
     {
         Task<List<Permission>> GetPermissionsWEmployeesAsync();
         Task <int> CountThisYearPermissions(int id);
+        Task <int> CountLastYearPermissions(int id);
 
         Task<List<Permission>> GetPermissionsByEmployeeIdAsync(int id);
     }

@@ -20,5 +20,15 @@ namespace PermissionApp.AnnualPermissionApp.BLL.Concrete
         {
             return _employeeDal.GetEmployeesWithPermissions(id);
         }
+
+        public async Task<int> PermissionRightLastYear(int id)
+        {
+            return await _employeeDal.PermissionRightLastYear(id);
+        }
+
+        public async Task<int> PermissionRightThisYear(int id)
+        {
+            return await _employeeDal.PermissionRightThisYear(id);
+        }
     }
 }

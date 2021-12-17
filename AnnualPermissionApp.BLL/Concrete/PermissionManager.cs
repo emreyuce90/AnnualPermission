@@ -16,6 +16,11 @@ namespace PermissionApp.AnnualPermissionApp.BLL.Concrete
             _permissionDal = permissionDal;
         }
 
+        public Task<int> CountLastYearPermissions(int id)
+        {
+            return _permissionDal.CountLastYearPermissions(id);
+        }
+
         public async Task<int> CountThisYearPermissions(int id)
         {
           return  await _permissionDal.CountThisYearPermissions(id);

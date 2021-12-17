@@ -12490,6 +12490,38 @@
         }
       },
       {
+        "HashCode": 211781758,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__PersonelViewComponentTagHelper",
+        "AssemblyName": "AnnualPermissionApp.UI",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:personel",
+            "Attributes": [
+              {
+                "Name": "id"
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "MVC.ViewComponent",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__PersonelViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "Personel"
+        }
+      },
+      {
         "HashCode": 141407075,
         "Kind": "Components.Bind",
         "Name": "Bind",

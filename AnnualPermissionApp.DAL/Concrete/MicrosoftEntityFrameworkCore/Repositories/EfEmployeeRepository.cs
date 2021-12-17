@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -19,6 +20,48 @@ namespace PermissionApp.AnnualPermissionApp.DAL.Concrete.MicrosoftEntityFramewor
         public Task<List<Employee>> GetEmployeesWithPermissions(int id)
         {
            return _context.Employees.Where(I=>I.Id == id).Include(I=>I.Permissions).ToListAsync();
+        }
+
+        public async Task<int> PermissionRightLastYear(int id)
+        {
+             var emp = await _context.Employees.Where(I=> I.Id == id).FirstOrDefaultAsync();
+              if((DateTime.Now.Year-1) - (emp.EnterDate.Year-1) <= 1)
+                {
+                    return 0;
+                }
+                else if ((DateTime.Now.Year-1) - (emp.EnterDate.Year-1) <= 5)
+                {
+                   return 14;
+                }
+                else if ((DateTime.Now.Year-1) - (emp.EnterDate.Year-1) > 5 && (DateTime.Now.Year-1) - (emp.EnterDate.Year-1) < 15 )
+                {
+                   return 20;
+                }
+                else
+                {
+                   return 26;
+                }
+        }
+
+        public async Task<int> PermissionRightThisYear(int id)
+        {
+            var emp = await _context.Employees.Where(I=> I.Id == id).FirstOrDefaultAsync();
+              if(DateTime.Now.Year - emp.EnterDate.Year <= 1)
+                {
+                    return 0;
+                }
+                else if (DateTime.Now.Year - emp.EnterDate.Year <= 5)
+                {
+                   return 14;
+                }
+                else if (DateTime.Now.Year - emp.EnterDate.Year > 5 && DateTime.Now.Year - emp.EnterDate.Year < 15 )
+                {
+                   return 20;
+                }
+                else
+                {
+                   return 26;
+                }
         }
     }
 }
