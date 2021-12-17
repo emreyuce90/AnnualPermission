@@ -13,7 +13,7 @@
     <thead class="thead-inverse">
         <tr>
 
-            <th>Plasiyer Id</th>
+           
             <th>Plasiyer Adı</th>
             <th>Plasiyer Soyadı</th>
             <th>Plasiyer Ünvanı</th>
@@ -21,6 +21,7 @@
             <th>Çalışma Zamanı</th>
             <th>Kanuni izin hakkı</th>
             <th>Kullandığı İzinler</th>
+           
             
             <th>İşlemler</th>
         </tr>
@@ -30,7 +31,7 @@
         {
             <tr>
 
-                <td>@item.Id</td>
+                
                 <td>@item.Name</td>
                 <td>@item.Surname</td>
                 <td>@item.Title</td>
@@ -48,6 +49,7 @@
                     asp-action="DeleteEmployee" asp-route-id="@item.Id" data-employee="@item.Id"
                     class="btn btn-danger"><i class="fas fa-trash-alt p-1"></i></a>
                 </td>
+                
             </tr>
         }
 

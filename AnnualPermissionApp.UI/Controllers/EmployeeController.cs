@@ -47,7 +47,7 @@ namespace PermissionApp.AnnualPermissionApp.UI.Controllers
                 {
                     e.LegalPermission = 14;
                 }
-                else if (DateTime.Now.Year - employee.EnterDate.Year > 5)
+                else if (DateTime.Now.Year - employee.EnterDate.Year > 5 && DateTime.Now.Year - employee.EnterDate.Year < 15 )
                 {
                     e.LegalPermission = 20;
                 }
