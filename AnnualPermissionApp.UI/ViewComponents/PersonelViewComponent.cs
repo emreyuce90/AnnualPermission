@@ -1,3 +1,4 @@
+using AnnualPermissionApp.UI.Models;
 using Microsoft.AspNetCore.Mvc;
 using PermissionApp.AnnualPermissionApp.BLL.Interfaces;
 
@@ -22,14 +23,22 @@ namespace AnnualPermissionApp.UI.ViewComponents
             int lastPermission = _employeeService.PermissionRightLastYear(id).Result;
             //bu yıl izin hakkı
             int thisPermission = _employeeService.PermissionRightThisYear(id).Result;
-
+            //Geçen yıldan kalan izni
             int remainsLastYear = lastPermission-lastYear;
-
+            //Bu yıldan kalan izni
             int remainsThisYear = thisPermission-thisYear;
-            
-            int totalRemains =remainsLastYear -remainsThisYear;
-
-            return View();
+            //Toplam kalan izin
+            int totalRemains =remainsLastYear + remainsThisYear;
+            //bir model oluşturup verileri model üzerinden view a aktaralım
+            var detail = new PermissionDetail();
+            detail.ThisYear = thisYear;
+            detail.LastYear = lastYear;
+            detail.LastPermission = lastPermission;
+            detail.ThisPermission = thisPermission;
+            detail.RemainsLastYear = remainsLastYear;
+            detail.RemainsThisYear = remainsThisYear;
+            detail.TotalRemains = totalRemains;
+            return View(detail);
         }
     }
 }

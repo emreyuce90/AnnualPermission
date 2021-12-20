@@ -1,0 +1,32 @@
+@model PermissionDetail
+
+
+
+<div class="card mb-3">
+  <div class="row g-0">
+   
+    <div class="col-md-4 my-auto">
+     <h5 class="card-title text-center display-6">KALAN TOPLAM İZİN SAYISI</h5>
+     <p class="display-1 text-center ">@Model.TotalRemains</p>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+      
+            
+        
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Geçen yıl izin hakkı :</strong>@Model.LastPermission GÜN</li>
+          <li class="list-group-item"><strong>Geçen yıl kullandığı izinler :</strong>@Model.LastYear GÜN</span></li>
+          <li class="list-group-item"><strong>Geçen yıldan kalan izinler :</strong>@Model.RemainsLastYear GÜN</span></li>
+             <li class="list-group-item"><strong>Bu yıl izin hakkı :</strong>@Model.ThisPermission GÜN</li>
+          <li class="list-group-item"><strong>Bu yıl kullandığı izinler :</strong>@Model.ThisYear GÜN</span></li>
+          <li class="list-group-item"><strong>Bu yıldan kalan izinler :</strong>@Model.RemainsThisYear GÜN</span></li>
+         <li class="list-group-item"><strong>Kalan Toplam İzin Hakkı :</strong>@Model.TotalRemains GÜN</span></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+

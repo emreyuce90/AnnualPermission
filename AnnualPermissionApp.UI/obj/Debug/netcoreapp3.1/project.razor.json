@@ -12458,38 +12458,6 @@
         }
       },
       {
-        "HashCode": -500648119,
-        "Kind": "MVC.ViewComponent",
-        "Name": "__Generated__UserViewComponentTagHelper",
-        "AssemblyName": "AnnualPermissionApp.UI",
-        "CaseSensitive": false,
-        "TagMatchingRules": [
-          {
-            "TagName": "vc:user",
-            "Attributes": [
-              {
-                "Name": "id"
-              }
-            ]
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "MVC.ViewComponent",
-            "Name": "id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "id"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "ITagHelper",
-          "Common.TypeName": "__Generated__UserViewComponentTagHelper",
-          "MVC.ViewComponent.Name": "User"
-        }
-      },
-      {
         "HashCode": 211781758,
         "Kind": "MVC.ViewComponent",
         "Name": "__Generated__PersonelViewComponentTagHelper",
@@ -12519,6 +12487,38 @@
           "Runtime.Name": "ITagHelper",
           "Common.TypeName": "__Generated__PersonelViewComponentTagHelper",
           "MVC.ViewComponent.Name": "Personel"
+        }
+      },
+      {
+        "HashCode": -500648119,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__UserViewComponentTagHelper",
+        "AssemblyName": "AnnualPermissionApp.UI",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:user",
+            "Attributes": [
+              {
+                "Name": "id"
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "MVC.ViewComponent",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__UserViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "User"
         }
       },
       {
@@ -14529,6 +14529,11 @@
     {
       "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Views\\Employee\\Index.cshtml",
       "TargetPath": "Views\\Employee\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Views\\Shared\\Components\\Personel\\Default.cshtml",
+      "TargetPath": "Views\\Shared\\Components\\Personel\\Default.cshtml",
       "FileKind": "mvc"
     },
     {
