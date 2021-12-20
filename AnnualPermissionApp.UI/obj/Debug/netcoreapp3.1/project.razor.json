@@ -12522,6 +12522,38 @@
         }
       },
       {
+        "HashCode": -2038970120,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__PersonelchartViewComponentTagHelper",
+        "AssemblyName": "AnnualPermissionApp.UI",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:personelchart",
+            "Attributes": [
+              {
+                "Name": "id"
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "MVC.ViewComponent",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__PersonelchartViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "Personelchart"
+        }
+      },
+      {
         "HashCode": 141407075,
         "Kind": "Components.Bind",
         "Name": "Bind",
@@ -14544,6 +14576,11 @@
     {
       "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Views\\Employee\\UpdateEmployee.cshtml",
       "TargetPath": "Views\\Employee\\UpdateEmployee.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Views\\Shared\\Components\\Personelchart\\Default.cshtml",
+      "TargetPath": "Views\\Shared\\Components\\Personelchart\\Default.cshtml",
       "FileKind": "mvc"
     },
     {

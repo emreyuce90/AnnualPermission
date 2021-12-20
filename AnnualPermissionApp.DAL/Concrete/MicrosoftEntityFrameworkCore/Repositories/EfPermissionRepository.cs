@@ -28,7 +28,7 @@ namespace PermissionApp.AnnualPermissionApp.DAL.Concrete.MicrosoftEntityFramewor
         {
             //Dilekçe başlangıç tarihi yılı içerisinde bulunduğumuz yıla eşit olmalı
             //bu bize 2021'in verilerini geri dönecek
-            return await _context.Permissions.Where(I => I.StartDate.Year-1 == DateTime.Now.Year-1 && I.EmployeeId == id).SumAsync(I => I.DaysCount);
+            return await _context.Permissions.Where(I => (I.StartDate.Year) == (DateTime.Now.Year-1) && (I.EmployeeId == id)).SumAsync(I => I.DaysCount);
         }
 
 

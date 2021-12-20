@@ -25,15 +25,16 @@ namespace PermissionApp.AnnualPermissionApp.DAL.Concrete.MicrosoftEntityFramewor
         public async Task<int> PermissionRightLastYear(int id)
         {
              var emp = await _context.Employees.Where(I=> I.Id == id).FirstOrDefaultAsync();
-              if((DateTime.Now.Year-1) - (emp.EnterDate.Year-1) <= 1)
+             //2020 -2016 =5
+              if((DateTime.Now.Year-1) - (emp.EnterDate.Year) <= 1)
                 {
                     return 0;
                 }
-                else if ((DateTime.Now.Year-1) - (emp.EnterDate.Year-1) <= 5)
+                else if ((DateTime.Now.Year-1) - (emp.EnterDate.Year) <= 5)
                 {
                    return 14;
                 }
-                else if ((DateTime.Now.Year-1) - (emp.EnterDate.Year-1) > 5 && (DateTime.Now.Year-1) - (emp.EnterDate.Year-1) < 15 )
+                else if ((DateTime.Now.Year-1) - (emp.EnterDate.Year) > 5 && (DateTime.Now.Year-1) - (emp.EnterDate.Year) < 15 )
                 {
                    return 20;
                 }
@@ -43,9 +44,12 @@ namespace PermissionApp.AnnualPermissionApp.DAL.Concrete.MicrosoftEntityFramewor
                 }
         }
 
+         //Bu yıl izin hakkı
         public async Task<int> PermissionRightThisYear(int id)
         {
+           
             var emp = await _context.Employees.Where(I=> I.Id == id).FirstOrDefaultAsync();
+               //2021 -2016 =5
               if(DateTime.Now.Year - emp.EnterDate.Year <= 1)
                 {
                     return 0;
