@@ -9,7 +9,7 @@ namespace AnnualPermissionApp.DTO
         public string Surname { get; set; }
         public string Title { get; set; }
         public DateTime EnterDate { get; set; }
-        public int LegalPermission { get; set; }
+        
     }
 }
 

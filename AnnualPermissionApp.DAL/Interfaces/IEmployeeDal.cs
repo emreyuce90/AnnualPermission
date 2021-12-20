@@ -10,6 +10,7 @@ namespace PermissionApp.AnnualPermissionApp.DAL.Interfaces
         Task<List<Employee>> GetEmployeesWithPermissions(int id);
         Task<int> PermissionRightThisYear(int id);
         Task<int> PermissionRightLastYear(int id);
+        
 
     }
 }
