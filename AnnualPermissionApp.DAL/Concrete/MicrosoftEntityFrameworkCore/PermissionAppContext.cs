@@ -12,7 +12,7 @@ namespace PermissionApp.AnnualPermissionApp.DAL.Concrete.MicrosoftEntityFramewor
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-           optionsBuilder.UseSqlServer(_configuraton.GetConnectionString("db2")); 
+           optionsBuilder.UseSqlServer(_configuraton.GetConnectionString("db1")); 
                    
         }
         public DbSet<AppUser> AppUsers { get; set; }

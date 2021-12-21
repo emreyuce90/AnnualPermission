@@ -16,11 +16,13 @@ namespace AnnualPermissionApp.UI.Controllers
         private readonly IPermissionService _permissionService;
         private readonly IGenericService<Permission> _genericService;
         private readonly IMapper _mapper;
-        public PermissionController(IGenericService<Permission> genericService, IMapper mapper, IPermissionService permissionService)
+        private readonly IEmployeeService _employeeService;
+        public PermissionController(IGenericService<Permission> genericService, IMapper mapper, IPermissionService permissionService,IEmployeeService employeeService)
         {
             _genericService = genericService;
             _mapper = mapper;
             _permissionService = permissionService;
+            _employeeService = employeeService;
         }
 
         public IActionResult AddPermission(int id)
@@ -32,6 +34,12 @@ namespace AnnualPermissionApp.UI.Controllers
         [HttpPost]
         public async Task<IActionResult> AddPermission(PermissionAddModel model)
         {
+            //izin durumunu kontrol et
+            // var permission =await _employeeService.PermissionRightThisYear(model.EmployeeId);
+            // if(permission == 0){
+            //     ModelState.AddModelError("","İzin vermeye çalıştığınız kullanıcının izni bulunmamaktadır");
+            // }
+            
             if (ModelState.IsValid)
             {
 
