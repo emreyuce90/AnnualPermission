@@ -7256,37 +7256,40 @@
     ]
   },
   "packageFolders": {
-    "/home/emre/.nuget/packages/": {}
+    "C:\\Users\\EMRE\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/emre/Desktop/AnnualPermission/AnnualPermissionApp.UI/AnnualPermissionApp.UI.csproj",
+      "projectUniqueName": "C:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\AnnualPermissionApp.UI.csproj",
       "projectName": "AnnualPermissionApp.UI",
-      "projectPath": "/home/emre/Desktop/AnnualPermission/AnnualPermissionApp.UI/AnnualPermissionApp.UI.csproj",
-      "packagesPath": "/home/emre/.nuget/packages/",
-      "outputPath": "/home/emre/Desktop/AnnualPermission/AnnualPermissionApp.UI/obj/",
+      "projectPath": "C:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\AnnualPermissionApp.UI.csproj",
+      "packagesPath": "C:\\Users\\EMRE\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/emre/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\EMRE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "/home/emre/Desktop/AnnualPermission/AnnualPermissionApp.BLL/AnnualPermissionApp.BLL.csproj": {
-              "projectPath": "/home/emre/Desktop/AnnualPermission/AnnualPermissionApp.BLL/AnnualPermissionApp.BLL.csproj"
+            "C:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.BLL\\AnnualPermissionApp.BLL.csproj": {
+              "projectPath": "C:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.BLL\\AnnualPermissionApp.BLL.csproj"
             },
-            "/home/emre/Desktop/AnnualPermission/AnnualPermissionApp.DTO/AnnualPermissionApp.DTO.csproj": {
-              "projectPath": "/home/emre/Desktop/AnnualPermission/AnnualPermissionApp.DTO/AnnualPermissionApp.DTO.csproj"
+            "C:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.DTO\\AnnualPermissionApp.DTO.csproj": {
+              "projectPath": "C:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.DTO\\AnnualPermissionApp.DTO.csproj"
             },
-            "/home/emre/Desktop/AnnualPermission/AnnualPermissionApp.Entities/AnnualPermissionApp.Entities.csproj": {
-              "projectPath": "/home/emre/Desktop/AnnualPermission/AnnualPermissionApp.Entities/AnnualPermissionApp.Entities.csproj"
+            "C:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj": {
+              "projectPath": "C:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj"
             }
           }
         }
@@ -7299,6 +7302,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
@@ -7331,7 +7335,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.416/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
