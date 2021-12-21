@@ -12458,6 +12458,38 @@
         }
       },
       {
+        "HashCode": -2038970120,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__PersonelchartViewComponentTagHelper",
+        "AssemblyName": "AnnualPermissionApp.UI",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:personelchart",
+            "Attributes": [
+              {
+                "Name": "id"
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "MVC.ViewComponent",
+            "Name": "id",
+            "TypeName": "System.Int32",
+            "Metadata": {
+              "Common.PropertyName": "id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__PersonelchartViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "Personelchart"
+        }
+      },
+      {
         "HashCode": 211781758,
         "Kind": "MVC.ViewComponent",
         "Name": "__Generated__PersonelViewComponentTagHelper",
@@ -12519,38 +12551,6 @@
           "Runtime.Name": "ITagHelper",
           "Common.TypeName": "__Generated__UserViewComponentTagHelper",
           "MVC.ViewComponent.Name": "User"
-        }
-      },
-      {
-        "HashCode": -2038970120,
-        "Kind": "MVC.ViewComponent",
-        "Name": "__Generated__PersonelchartViewComponentTagHelper",
-        "AssemblyName": "AnnualPermissionApp.UI",
-        "CaseSensitive": false,
-        "TagMatchingRules": [
-          {
-            "TagName": "vc:personelchart",
-            "Attributes": [
-              {
-                "Name": "id"
-              }
-            ]
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "MVC.ViewComponent",
-            "Name": "id",
-            "TypeName": "System.Int32",
-            "Metadata": {
-              "Common.PropertyName": "id"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "ITagHelper",
-          "Common.TypeName": "__Generated__PersonelchartViewComponentTagHelper",
-          "MVC.ViewComponent.Name": "Personelchart"
         }
       },
       {
