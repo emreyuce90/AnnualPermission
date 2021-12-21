@@ -9,5 +9,9 @@ namespace PermissionApp.AnnualPermissionApp.BLL.Interfaces
         Task<List<Employee>> GetEmployeesWithPermissions(int id);
         Task<int> PermissionRightThisYear(int id);
         Task<int> PermissionRightLastYear(int id);
+
+        Task<List<Employee>> GetEmployeeListsBySearchString(string searchString);
+
+        
     }
 }

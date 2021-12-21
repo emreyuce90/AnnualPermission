@@ -11,6 +11,7 @@ namespace PermissionApp.AnnualPermissionApp.BLL.Interfaces
         Task DeleteAsync(T t);
         Task<T> GetByIdAsync(int id);
         Task<List<T>> GetAllAsync();
+        
 
     }
 }

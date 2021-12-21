@@ -1,4 +1,7 @@
 @model List<PermissionListDto>
+  <div class="m-3">
+    <a asp-controller="Employee" asp-action="Index" class="btn btn-success"><i class="fas fa-arrow-circle-left"></i>Geri dön</a>
+  </div>
 
 @await Component.InvokeAsync("User",@ViewBag.Id)
 

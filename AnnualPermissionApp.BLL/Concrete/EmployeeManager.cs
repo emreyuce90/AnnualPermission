@@ -16,6 +16,11 @@ namespace PermissionApp.AnnualPermissionApp.BLL.Concrete
             _employeeDal = employeeDal;
         }
 
+        public async Task<List<Employee>> GetEmployeeListsBySearchString(string searchString)
+        {
+           return await _genericDal.GetAllAsync(I=> I.Name.ToLower().Contains(searchString.ToLower()) || I.Surname.ToLower().Contains(searchString.ToLower()));
+        }
+
         public Task<List<Employee>> GetEmployeesWithPermissions(int id)
         {
             return _employeeDal.GetEmployeesWithPermissions(id);

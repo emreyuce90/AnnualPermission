@@ -16,50 +16,31 @@ namespace PermissionApp.AnnualPermissionApp.UI.Controllers
         private readonly IConfiguration _configuration;
         private readonly IMapper _mapper;
         private readonly IGenericService<Employee> _employeeService;
-        public EmployeeController(IGenericService<Employee> employeeService, IMapper mapper, IConfiguration configuration)
+        private readonly IEmployeeService _service;
+        public EmployeeController(IGenericService<Employee> employeeService, IMapper mapper, IConfiguration configuration, IEmployeeService service)
         {
             _employeeService = employeeService;
             _mapper = mapper;
             _configuration = configuration;
+            _service = service;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            //dbden gelen data
-            var employeeList = await _employeeService.GetAllAsync();
-            
-            //dto katmanımız
-            List<EmployeeListDto> emp = new List<EmployeeListDto>();
-            //iterating db list
-            foreach (var employee in employeeList)
+            ViewBag.SearchString = searchString;
+            if (String.IsNullOrWhiteSpace(searchString))
             {
-                EmployeeListDto e = new EmployeeListDto();
-                e.Id = employee.Id;
-                e.Name = employee.Name;
-                e.Surname = employee.Surname;
-                e.Title = employee.Title;
-                e.EnterDate = employee.EnterDate;
-                //! Mantığı kontrol et
-                if (DateTime.Now.Year - employee.EnterDate.Year <= 1)
-                {
-                    e.LegalPermission = 0;
-                }
-                else if (DateTime.Now.Year - employee.EnterDate.Year <= 5)
-                {
-                    e.LegalPermission = 14;
-                }
-                else if (DateTime.Now.Year - employee.EnterDate.Year > 5 && DateTime.Now.Year - employee.EnterDate.Year < 15 )
-                {
-                    e.LegalPermission = 20;
-                }
-                else
-                {
-                    e.LegalPermission = 26;
-                }
-                emp.Add(e);
+                //kullanıcı herhangi bir arama yapmadıysa
+                return View(_mapper.Map<List<EmployeeListDto>>(await _employeeService.GetAllAsync()));
             }
-            return View(emp);
+            //filtreli sorgu
+
+            return View(_mapper.Map<List<EmployeeListDto>>(await _service.GetEmployeeListsBySearchString(searchString)));
+
+
         }
+
+
 
         [HttpGet]
         public IActionResult AddEmployee()

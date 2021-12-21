@@ -11,4 +11,7 @@
 ### --> Microsoft EntityFramework Core
 ### --> AutoMapper
 ### --> Fluent API
+### -->View Components
+### -->Tag Helpers
+
 

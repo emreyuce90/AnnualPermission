@@ -33,8 +33,18 @@ namespace AnnualPermissionApp.UI.ViewComponents
             //Toplam izinler / toplam izin hakkı
             double hakedis = lastYear+thisYear;
             double kullanilan =lastPermission + thisPermission;
+
             double result = Math.Round(((hakedis/kullanilan)*100),0);
-            ViewBag.Proportion = result;
+            if(hakedis ==0 || kullanilan == 0)
+            {
+                ViewBag.Proportion =0;
+            }
+            else{
+                ViewBag.Proportion = result;
+            }
+           
+            
+            
             return View();
         }
     }
