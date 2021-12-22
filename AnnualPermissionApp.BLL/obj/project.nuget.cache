@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "M6OfU59eu56UAGovQYh9scJCpBpUpJTuCHpSFxbaG/vL+ZZPjfcE34YYSRlHJcKEYVOFPELaEKJBTeURyomZww==",
-  "success": false,
+  "dgSpecHash": "VbcGh3gUOD+U7DQQyczFCHyrEia8sBZwkSP/idJnJ6RWFe+b4/BaaDf1PFoHUWGi2tQXt8/34w4a/azDaVL4UQ==",
+  "success": true,
   "projectFilePath": "C:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.BLL\\AnnualPermissionApp.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EMRE\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
@@ -48,9 +48,6 @@
     "C:\\Users\\EMRE\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
-    "C:\\Users\\EMRE\\.nuget\\packages\\nlog\\3.1.0\\nlog.3.1.0.nupkg.sha512",
-    "C:\\Users\\EMRE\\.nuget\\packages\\nlog.config\\4.7.13\\nlog.config.4.7.13.nupkg.sha512",
-    "C:\\Users\\EMRE\\.nuget\\packages\\nlog.schema\\4.7.13\\nlog.schema.4.7.13.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -121,25 +118,5 @@
     "C:\\Users\\EMRE\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\EMRE\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "'NLog 3.1.0' paketi, proje hedef çerçevesi '.NETCoreApp,Version=v3.1' yerine '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' kullanılarak geri yüklendi. Bu paket projenizle tamamen uyumlu olmayabilir.",
-      "libraryId": "NLog",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "NLog paketi için 4.7.13 sürümünden 3.1.0.0 sürümüne düşürme algılandı. Farklı bir sürüm seçmek için doğrudan projeden pakete başvurun. \r\n AnnualPermissionApp.BLL -> NLog.Config 4.7.13 -> NLog (>= 4.7.13) \r\n AnnualPermissionApp.BLL -> NLog (>= 3.1.0)",
-      "libraryId": "NLog",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  "logs": []
 }
