@@ -16,9 +16,9 @@ namespace AnnualPermissionApp.UI.Controllers
         {
             if(ModelState.IsValid)
             {
-
+                //
             }
-            ModelState.AddModelError("","");
+           
             return View(model);
         }
 
