@@ -23,12 +23,14 @@ namespace AnnualPermissionApp.UI
             var adminUser = await userManager.FindByNameAsync("admin");
             if (adminUser == null)
             {
-                var user = new AppUser()
+                var user = new AppUser
                 {
                     Name = "admin",
-                    Email = "info@bayraktarlartrakya.com"
+                    Email = "info@bayraktarlartrakya.com",
+                    UserName="admin",
+                    
                 };
-                await userManager.CreateAsync(user, "Bayraktarlar123*");
+                await userManager.CreateAsync(user,"Bayraktarlar123*");
                 await userManager.AddToRoleAsync(user,"Admin");
             }
 
