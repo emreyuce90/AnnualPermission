@@ -7,9 +7,9 @@ namespace AnnualPermissionApp.UI.ViewComponents
 {
     public class PersonelchartViewComponent : ViewComponent
     {
-        private readonly IEmployeeService _employeeService;
+        private readonly IAppUserService _employeeService;
         private readonly IPermissionService _permissionService;
-        public PersonelchartViewComponent(IPermissionService permissionService,IEmployeeService employeeService)
+        public PersonelchartViewComponent(IPermissionService permissionService,IAppUserService employeeService)
         {
             _permissionService = permissionService;
             _employeeService = employeeService;

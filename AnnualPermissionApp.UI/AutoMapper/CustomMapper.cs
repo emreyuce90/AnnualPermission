@@ -11,14 +11,14 @@ namespace PermissionApp.AnnualPermissionApp.UI.AutoMapper
         public CustomMapper()
         {
             //Employee
-            CreateMap<Employee,EmployeeListDto>();
-            CreateMap<EmployeeListDto,Employee>();
+            CreateMap<AppUser,EmployeeListDto>();
+            CreateMap<EmployeeListDto,AppUser>();
             
-            CreateMap<Employee,EmployeeAddDto>();
-            CreateMap<EmployeeAddDto,Employee>();
+            CreateMap<AppUser,EmployeeAddDto>();
+            CreateMap<EmployeeAddDto,AppUser>();
 
-            CreateMap<EmployeeUpdateDto,Employee>();
-            CreateMap<Employee,EmployeeUpdateDto>();
+            CreateMap<EmployeeUpdateDto,AppUser>();
+            CreateMap<AppUser,EmployeeUpdateDto>();
 
             CreateMap<Permission,PermissionAddModel>();
             CreateMap<PermissionAddModel,Permission>();

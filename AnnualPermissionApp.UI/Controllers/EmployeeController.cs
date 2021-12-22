@@ -15,9 +15,9 @@ namespace PermissionApp.AnnualPermissionApp.UI.Controllers
     {
         private readonly IConfiguration _configuration;
         private readonly IMapper _mapper;
-        private readonly IGenericService<Employee> _employeeService;
-        private readonly IEmployeeService _service;
-        public EmployeeController(IGenericService<Employee> employeeService, IMapper mapper, IConfiguration configuration, IEmployeeService service)
+        private readonly IGenericService<AppUser> _employeeService;
+        private readonly IAppUserService _service;
+        public EmployeeController(IGenericService<AppUser> employeeService, IMapper mapper, IConfiguration configuration, IAppUserService service)
         {
             _employeeService = employeeService;
             _mapper = mapper;
@@ -54,7 +54,7 @@ namespace PermissionApp.AnnualPermissionApp.UI.Controllers
             if (ModelState.IsValid)
             {
                 //DO İT
-                await _employeeService.AddAsync(_mapper.Map<Employee>(model));
+                await _employeeService.AddAsync(_mapper.Map<AppUser>(model));
                 return RedirectToAction("Index");
             }
 
@@ -78,7 +78,7 @@ namespace PermissionApp.AnnualPermissionApp.UI.Controllers
         {
             if (ModelState.IsValid)
             {
-                await _employeeService.UpdateAsync(_mapper.Map<Employee>(model));
+                await _employeeService.UpdateAsync(_mapper.Map<AppUser>(model));
                 return RedirectToAction("Index");
             }
             return View(model);
@@ -91,7 +91,7 @@ namespace PermissionApp.AnnualPermissionApp.UI.Controllers
 
             if (id != 0)
             {
-                await _employeeService.DeleteAsync(new Employee { Id = id });
+                await _employeeService.DeleteAsync(new AppUser { Id = id });
                 return Json(null);
             }
             return BadRequest("Silmek istediğiniz plasiyer veritabanımızda kayıtl değil");

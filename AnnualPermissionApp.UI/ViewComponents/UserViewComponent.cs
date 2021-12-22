@@ -10,8 +10,8 @@ namespace AnnualPermissionApp.UI.ViewComponents
     public class UserViewComponent:ViewComponent
     {
         private readonly IMapper _mapper;
-        private readonly IGenericService<Employee> _genericService;
-        public UserViewComponent(IGenericService<Employee> genericService,IMapper mapper)
+        private readonly IGenericService<AppUser> _genericService;
+        public UserViewComponent(IGenericService<AppUser> genericService,IMapper mapper)
         {
             _genericService = genericService;
             _mapper = mapper;

@@ -16,8 +16,8 @@ namespace AnnualPermissionApp.UI.Controllers
         private readonly IPermissionService _permissionService;
         private readonly IGenericService<Permission> _genericService;
         private readonly IMapper _mapper;
-        private readonly IEmployeeService _employeeService;
-        public PermissionController(IGenericService<Permission> genericService, IMapper mapper, IPermissionService permissionService,IEmployeeService employeeService)
+        private readonly IAppUserService _employeeService;
+        public PermissionController(IGenericService<Permission> genericService, IMapper mapper, IPermissionService permissionService,IAppUserService employeeService)
         {
             _genericService = genericService;
             _mapper = mapper;
