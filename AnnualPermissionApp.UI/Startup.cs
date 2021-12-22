@@ -2,13 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AnnualPermissionApp.Entities.Concrete;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PermissionApp.AnnualPermissionApp.BLL.Containers.MicrosoftIoC;
+using PermissionApp.AnnualPermissionApp.Entities.Concrete;
 
 namespace AnnualPermissionApp.UI
 {
@@ -24,7 +27,7 @@ namespace AnnualPermissionApp.UI
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,UserManager<AppUser> userManager ,RoleManager<AppRole> roleManager)
         {
             if (env.IsDevelopment())
             {
@@ -33,6 +36,7 @@ namespace AnnualPermissionApp.UI
             app.UseStaticFiles();
             //app.UseExceptionHandler("/Error");
             app.UseRouting();
+            IdentityInitilazer.SeedData(userManager,roleManager).Wait();
             
             app.UseEndpoints(endpoints =>
             {
