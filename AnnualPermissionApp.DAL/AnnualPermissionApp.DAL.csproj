@@ -3,12 +3,13 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.21"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.21"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.21"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.1.0-preview1-final"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.21"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="3.1.21"/>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0"/>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.21"/>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AnnualPermissionApp.Entities\AnnualPermissionApp.Entities.csproj"/>

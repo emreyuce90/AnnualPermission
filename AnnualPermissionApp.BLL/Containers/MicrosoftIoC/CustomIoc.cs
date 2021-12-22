@@ -28,8 +28,8 @@ namespace PermissionApp.AnnualPermissionApp.BLL.Containers.MicrosoftIoC
             services.AddScoped<IAppUserDal, EfAppUserRepository>();
 
             //Employee
-            services.AddScoped<IEmployeeService, EmployeeManager>();
-            services.AddScoped<IEmployeeDal, EfEmployeeRepository>();
+            services.AddScoped<IAppUserService, AppUserManager>();
+            services.AddScoped<IAppUserDal, EfAppUserRepository>();
 
             //Permission
 

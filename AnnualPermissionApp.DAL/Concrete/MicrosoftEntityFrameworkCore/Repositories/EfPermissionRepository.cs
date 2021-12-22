@@ -21,20 +21,20 @@ namespace PermissionApp.AnnualPermissionApp.DAL.Concrete.MicrosoftEntityFramewor
         {
             //Dilekçe başlangıç tarihi yılı içerisinde bulunduğumuz yıla eşit olmalı
             //bu bize 2021'in verilerini geri dönecek
-            return await _context.Permissions.Where(I => I.StartDate.Year == DateTime.Now.Year && I.EmployeeId == id).SumAsync(I => I.DaysCount);
+            return await _context.Permissions.Where(I => I.StartDate.Year == DateTime.Now.Year && I.AppUserId == id).SumAsync(I => I.DaysCount);
         }
 
             public async Task<int> CountLastYearPermissions(int id)
         {
             //Dilekçe başlangıç tarihi yılı içerisinde bulunduğumuz yıla eşit olmalı
             //bu bize 2021'in verilerini geri dönecek
-            return await _context.Permissions.Where(I => (I.StartDate.Year) == (DateTime.Now.Year-1) && (I.EmployeeId == id)).SumAsync(I => I.DaysCount);
+            return await _context.Permissions.Where(I => (I.StartDate.Year) == (DateTime.Now.Year-1) && (I.AppUserId == id)).SumAsync(I => I.DaysCount);
         }
 
 
         public async Task<List<Permission>> GetPermissionsByEmployeeIdAsync(int id)
         {
-            return await _context.Permissions.Include(I => I.Employees).Where(I => I.EmployeeId == id).ToListAsync();
+            return await _context.Permissions.Include(I => I.AppUser).Where(I => I.AppUserId == id).ToListAsync();
         }
 
         public async Task<List<Permission>> GetPermissionsWEmployeesAsync()

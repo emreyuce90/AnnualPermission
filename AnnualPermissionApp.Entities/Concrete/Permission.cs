@@ -6,8 +6,8 @@ namespace PermissionApp.AnnualPermissionApp.Entities.Concrete
     public class Permission : ITable
     {
         public int Id { get; set; }
-        public int EmployeeId { get; set; }
-        public virtual Employee Employees { get; set; }
+        public int AppUserId { get; set; }
+        public virtual AppUser AppUser { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public string RequestPicturePath { get; set; }

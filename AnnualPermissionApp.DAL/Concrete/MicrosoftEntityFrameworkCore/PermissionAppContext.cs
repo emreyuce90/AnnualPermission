@@ -1,9 +1,12 @@
+
+using AnnualPermissionApp.Entities.Concrete;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using PermissionApp.AnnualPermissionApp.Entities.Concrete;
 
 namespace PermissionApp.AnnualPermissionApp.DAL.Concrete.MicrosoftEntityFrameworkCore.Repositories.DatabaseContext{
-    public class PermissionAppContext:DbContext
+    public class PermissionAppContext:IdentityDbContext<AppUser,AppRole,int>
     {
         private readonly IConfiguration  _configuraton;
         public PermissionAppContext(IConfiguration configuration)
@@ -12,11 +15,11 @@ namespace PermissionApp.AnnualPermissionApp.DAL.Concrete.MicrosoftEntityFramewor
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-           optionsBuilder.UseSqlServer(_configuraton.GetConnectionString("db1")); 
+           optionsBuilder.UseSqlServer(_configuraton.GetConnectionString("db3")); 
+           base.OnConfiguring(optionsBuilder);
                    
         }
-        public DbSet<AppUser> AppUsers { get; set; }
-        public DbSet<Employee> Employees { get; set; }
         public DbSet<Permission> Permissions { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }
     }
 }

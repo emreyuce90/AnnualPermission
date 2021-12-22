@@ -13,5 +13,8 @@
 ### --> Fluent API
 ### -->View Components
 ### -->Tag Helpers
+### -->Identity
+### -->Jquery
+### -->AJAX
 
 
