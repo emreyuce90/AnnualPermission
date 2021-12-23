@@ -25,10 +25,11 @@ namespace AnnualPermissionApp.UI
             services.ConfigureApplicationCookie(opt =>
             {
                 opt.Cookie.Name = "Permission";
-                
+                opt.ExpireTimeSpan = TimeSpan.FromDays(20);
                 opt.Cookie.HttpOnly = true;
-                opt.Cookie.Path = "/Account/Login";
+                opt.Cookie.Path = "Account/Login";
                 opt.Cookie.SameSite = SameSiteMode.Strict;
+                opt.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
 
             });
             services.AddAutoMapper(typeof(Startup));
@@ -42,18 +43,18 @@ namespace AnnualPermissionApp.UI
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseStaticFiles();
-            //app.UseExceptionHandler("/Error");
 
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
             IdentityInitilazer.SeedData(userManager, roleManager).Wait();
+            app.UseStaticFiles();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapDefaultControllerRoute();
             });
+
         }
     }
 }

@@ -12,7 +12,7 @@ using PermissionApp.AnnualPermissionApp.Entities.Concrete;
 
 namespace PermissionApp.AnnualPermissionApp.UI.Controllers
 {
-    [Authorize(Roles="Member")]
+    [Authorize(Roles="Admin")]
     public class EmployeeController : Controller
     {
         private readonly IConfiguration _configuration;

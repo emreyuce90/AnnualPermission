@@ -75,14 +75,14 @@ namespace AnnualPermissionApp.UI.Controllers
                 if (loggingUser != null)
                 {
                     //password kontrol
-                    var result = await _signInManager.PasswordSignInAsync(loggingUser, model.Password, model.RememberMe, false);
+                    var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, model.RememberMe, false);
                     if (result.Succeeded)
                     {
                         //rollere göre yönlendirme yap
                         var roleList = await _userManager.GetRolesAsync(loggingUser);
                         if (roleList.Contains("Admin"))
                         {
-                            return RedirectToAction("Index", "Employee");
+                            return RedirectToAction("Index","Employee");
                         }
                         else
                         {
@@ -91,7 +91,8 @@ namespace AnnualPermissionApp.UI.Controllers
                     }
 
                 }
-                ModelState.AddModelError("", "Girmiş olduğunuz şifre veya kullanıcı adı hatalı");
+                ModelState.AddModelError("","Girmiş olduğunuz şifre veya kullanıcı adı hatalı");
+                return View(model);
             }
 
             return View(model);
