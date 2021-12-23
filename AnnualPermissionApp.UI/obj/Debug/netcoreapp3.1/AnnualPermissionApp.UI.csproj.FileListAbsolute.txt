@@ -1598,3 +1598,4 @@ C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\bin\Debug\netcorea
 C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginLayout.cshtml.g.cs
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs

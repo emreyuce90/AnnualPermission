@@ -1,0 +1,37 @@
+@model AppUserLoginDto
+@{
+    Layout="_LoginLayout";
+}
+<div asp-validation-for="All">
+
+</div>
+
+<h3 class="text-center display-3">Giriş Yap</h3>
+
+<form method="post" asp-action="Login" asp-controller="Account" class="w-50 mx-auto shadow p-3">
+
+<div class="form-group">
+    <label >Kullanıcı Adı:</label>
+    <input type="text" class="form-control" asp-for="Username">
+    <span asp-validation-for="Username"></span>
+</div>
+
+<div class="form-group">
+    <label >Şifre :</label>
+    <input type="password" class="form-control" asp-for="Password">
+    <span asp-validation-for="Password"></span>
+</div>
+<br>
+<div class="form-group">
+    <label>Beni Hatırla
+        <input type="checkbox" asp-for="RememberMe" class="form-check-input">
+    </label>
+</div>
+
+<br>
+<button asp-controller="Account" asp-action="Login" class="btn btn-success"><i class="fas fa-key p-1"></i>Giriş Yap</button>
+<span>
+    <button class="btn btn-warning text-white" asp-controller="Account" asp-action="Register" ><i class="fas fa-user-plus p-1"></i>Kayıt Ol</button>
+</span>
+
+</form>

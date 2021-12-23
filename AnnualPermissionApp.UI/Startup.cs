@@ -22,6 +22,15 @@ namespace AnnualPermissionApp.UI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDependencies();
+            services.ConfigureApplicationCookie(opt => 
+            {
+                opt.Cookie.Name ="Permission";
+                opt.Cookie.Expiration =TimeSpan.FromDays(20);
+                opt.Cookie.HttpOnly = true;
+                opt.Cookie.Path = "/Account/Login";
+                opt.Cookie.SameSite = SameSiteMode.Strict;
+            
+            });
             services.AddAutoMapper(typeof(Startup));
             services.AddControllersWithViews().AddRazorRuntimeCompilation().AddFluentValidation();
         }

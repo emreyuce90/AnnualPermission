@@ -14602,6 +14602,11 @@
       "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Views\\Employee\\AddEmployee.cshtml",
       "TargetPath": "Views\\Employee\\AddEmployee.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Views\\Account\\Login.cshtml",
+      "TargetPath": "Views\\Account\\Login.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

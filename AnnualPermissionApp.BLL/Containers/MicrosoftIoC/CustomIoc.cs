@@ -20,6 +20,8 @@ namespace PermissionApp.AnnualPermissionApp.BLL.Containers.MicrosoftIoC
         {
             services.AddTransient<IValidator<EmployeeAddDto>, EmployeeAddValidator>();
             services.AddTransient<IValidator<AppUserRegisterDto>, AppUserRegisterValidator>();
+            services.AddTransient<IValidator<AppUserLoginDto>, AppUserLoginDtoValidator>();
+
 
 
             services.AddDbContext<PermissionAppContext>(options => options.UseLazyLoadingProxies());
