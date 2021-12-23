@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using AnnualPermissionApp.DTO;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using PermissionApp.AnnualPermissionApp.BLL.Interfaces;
@@ -11,6 +12,7 @@ using PermissionApp.AnnualPermissionApp.Entities.Concrete;
 
 namespace PermissionApp.AnnualPermissionApp.UI.Controllers
 {
+    [Authorize(Roles="Member")]
     public class EmployeeController : Controller
     {
         private readonly IConfiguration _configuration;

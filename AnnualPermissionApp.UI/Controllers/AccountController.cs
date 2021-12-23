@@ -65,10 +65,36 @@ namespace AnnualPermissionApp.UI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(AppUserLoginDto model)
+        public async Task<IActionResult> Login(AppUserLoginDto model)
         {
-            //
-            return View();
+            //check model is correct
+            if (ModelState.IsValid)
+            {
+                //Check user is exist
+                var loggingUser = await _userManager.FindByNameAsync(model.Username);
+                if (loggingUser != null)
+                {
+                    //password kontrol
+                    var result = await _signInManager.PasswordSignInAsync(loggingUser, model.Password, model.RememberMe, false);
+                    if (result.Succeeded)
+                    {
+                        //rollere göre yönlendirme yap
+                        var roleList = await _userManager.GetRolesAsync(loggingUser);
+                        if (roleList.Contains("Admin"))
+                        {
+                            return RedirectToAction("Index", "Employee");
+                        }
+                        else
+                        {
+                            return RedirectToAction("Index","Home");
+                        }
+                    }
+
+                }
+                ModelState.AddModelError("", "Girmiş olduğunuz şifre veya kullanıcı adı hatalı");
+            }
+
+            return View(model);
         }
 
 

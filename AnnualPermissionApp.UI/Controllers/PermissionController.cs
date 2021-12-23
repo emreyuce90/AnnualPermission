@@ -5,12 +5,14 @@ using System.Threading.Tasks;
 using AnnualPermissionApp.DTO;
 using AnnualPermissionApp.UI.Models;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PermissionApp.AnnualPermissionApp.BLL.Interfaces;
 using PermissionApp.AnnualPermissionApp.Entities.Concrete;
 
 namespace AnnualPermissionApp.UI.Controllers
 {
+    [Authorize(Roles="Admin")]
     public class PermissionController : Controller
     {
         private readonly IPermissionService _permissionService;

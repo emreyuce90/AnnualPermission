@@ -22,21 +22,21 @@ namespace AnnualPermissionApp.UI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDependencies();
-            services.ConfigureApplicationCookie(opt => 
+            services.ConfigureApplicationCookie(opt =>
             {
-                opt.Cookie.Name ="Permission";
-                opt.Cookie.Expiration =TimeSpan.FromDays(20);
+                opt.Cookie.Name = "Permission";
+                
                 opt.Cookie.HttpOnly = true;
                 opt.Cookie.Path = "/Account/Login";
                 opt.Cookie.SameSite = SameSiteMode.Strict;
-            
+
             });
             services.AddAutoMapper(typeof(Startup));
             services.AddControllersWithViews().AddRazorRuntimeCompilation().AddFluentValidation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,UserManager<AppUser> userManager ,RoleManager<AppRole> roleManager)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, UserManager<AppUser> userManager, RoleManager<AppRole> roleManager)
         {
             if (env.IsDevelopment())
             {
@@ -44,12 +44,15 @@ namespace AnnualPermissionApp.UI
             }
             app.UseStaticFiles();
             //app.UseExceptionHandler("/Error");
+
             app.UseRouting();
-            IdentityInitilazer.SeedData(userManager,roleManager).Wait();
-            
+            app.UseAuthentication();
+            app.UseAuthorization();
+            IdentityInitilazer.SeedData(userManager, roleManager).Wait();
+
             app.UseEndpoints(endpoints =>
             {
-               endpoints.MapDefaultControllerRoute();
+                endpoints.MapDefaultControllerRoute();
             });
         }
     }

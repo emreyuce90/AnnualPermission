@@ -2,7 +2,7 @@
 @{
     Layout="_LoginLayout";
 }
-<div asp-validation-for="All">
+<div asp-validation-for="All" class="text-danger">
 
 </div>
 
@@ -13,13 +13,13 @@
 <div class="form-group">
     <label >Kullanıcı Adı:</label>
     <input type="text" class="form-control" asp-for="Username">
-    <span asp-validation-for="Username"></span>
+    <span asp-validation-for="Username" class="text-danger"></span>
 </div>
 
 <div class="form-group">
     <label >Şifre :</label>
     <input type="password" class="form-control" asp-for="Password">
-    <span asp-validation-for="Password"></span>
+    <span asp-validation-for="Password" class="text-danger"></span>
 </div>
 <br>
 <div class="form-group">
