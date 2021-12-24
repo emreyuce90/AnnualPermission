@@ -26,8 +26,15 @@ using AnnualPermissionApp.UI.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f10af7fc52ce41fea50fdb9b704c5a9c6fc6ebab", @"/Views/Permission/GetPermissionList.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3f06f8d123a9d32665de52a92a073135251b7906", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0e1404fcfdbe2a1f8e29a02e1e84f79e4f1d9fda", @"/Views/_ViewImports.cshtml")]
     public class Views_Permission_GetPermissionList : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<PermissionListDto>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Employee", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -60,7 +67,7 @@ using AnnualPermissionApp.UI.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("  <div class=\"m-3\">\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f10af7fc52ce41fea50fdb9b704c5a9c6fc6ebab4708", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f10af7fc52ce41fea50fdb9b704c5a9c6fc6ebab4914", async() => {
                 WriteLiteral("<i class=\"fas fa-arrow-circle-left\"></i>Geri dön");
             }
             );
@@ -144,7 +151,7 @@ Write(await Component.InvokeAsync("Personel",@ViewBag.Id));
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n        <td>\r\n          ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f10af7fc52ce41fea50fdb9b704c5a9c6fc6ebab8336", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f10af7fc52ce41fea50fdb9b704c5a9c6fc6ebab8542", async() => {
                 WriteLiteral("Dilekçe Eki");
             }
             );

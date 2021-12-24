@@ -26,8 +26,15 @@ using AnnualPermissionApp.UI.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5a07c0f0086963b5e5f8972298c2b73ad9a7ca16", @"/Views/Employee/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3f06f8d123a9d32665de52a92a073135251b7906", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0e1404fcfdbe2a1f8e29a02e1e84f79e4f1d9fda", @"/Views/_ViewImports.cshtml")]
     public class Views_Employee_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<EmployeeListDto>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Index", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -94,7 +101,7 @@ using AnnualPermissionApp.UI.Models;
 #line hidden
 #nullable disable
             WriteLiteral(" </strong>kelimesine göre filtrelenmiş dataları görüntülüyorsunuz\r\n   ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a07c0f0086963b5e5f8972298c2b73ad9a7ca1610371", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a07c0f0086963b5e5f8972298c2b73ad9a7ca1610577", async() => {
                 WriteLiteral("Filtreyi kaldır");
             }
             );
@@ -121,7 +128,7 @@ using AnnualPermissionApp.UI.Models;
 #line hidden
 #nullable disable
             WriteLiteral("<div class=\"text-center\">\r\n\r\n  ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a07c0f0086963b5e5f8972298c2b73ad9a7ca1612089", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a07c0f0086963b5e5f8972298c2b73ad9a7ca1612295", async() => {
                 WriteLiteral("\r\n        <i class=\"fas fa-user-plus p-1\"></i>Yeni Çalışan Ekle\r\n    ");
             }
             );
@@ -140,7 +147,7 @@ using AnnualPermissionApp.UI.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a07c0f0086963b5e5f8972298c2b73ad9a7ca1613607", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a07c0f0086963b5e5f8972298c2b73ad9a7ca1613813", async() => {
                 WriteLiteral(@"
         <div class=""input-group mb-3"">
             <input type=""text"" name=""searchString""class=""form-control"" placeholder=""Çalışan ara..."" aria-label=""Recipient's username""
@@ -232,7 +239,7 @@ using AnnualPermissionApp.UI.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n                </td>\r\n                <td>\r\n\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a07c0f0086963b5e5f8972298c2b73ad9a7ca1618646", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a07c0f0086963b5e5f8972298c2b73ad9a7ca1618852", async() => {
                 WriteLiteral("<i class=\'fas fa-info-circle\'></i>");
             }
             );
@@ -266,7 +273,7 @@ using AnnualPermissionApp.UI.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a07c0f0086963b5e5f8972298c2b73ad9a7ca1621128", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a07c0f0086963b5e5f8972298c2b73ad9a7ca1621334", async() => {
                 WriteLiteral("<i class=\"fas fa-plus p-1\"></i>");
             }
             );
@@ -300,7 +307,7 @@ using AnnualPermissionApp.UI.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a07c0f0086963b5e5f8972298c2b73ad9a7ca1623612", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a07c0f0086963b5e5f8972298c2b73ad9a7ca1623818", async() => {
                 WriteLiteral("<i class=\"fas fa-edit p-1\"></i>");
             }
             );
@@ -334,7 +341,7 @@ using AnnualPermissionApp.UI.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a07c0f0086963b5e5f8972298c2b73ad9a7ca1626164", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5a07c0f0086963b5e5f8972298c2b73ad9a7ca1626370", async() => {
                 WriteLiteral("<i class=\"fas fa-trash-alt p-1\"></i>");
             }
             );

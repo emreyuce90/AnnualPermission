@@ -6,25 +6,28 @@ using AnnualPermissionApp.DTO;
 using AnnualPermissionApp.UI.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using PermissionApp.AnnualPermissionApp.BLL.Interfaces;
 using PermissionApp.AnnualPermissionApp.Entities.Concrete;
 
 namespace AnnualPermissionApp.UI.Controllers
 {
-    [Authorize(Roles="Admin")]
+    [Authorize(Roles = "Admin")]
     public class PermissionController : Controller
     {
+        private readonly UserManager<AppUser> _userManager;
         private readonly IPermissionService _permissionService;
         private readonly IGenericService<Permission> _genericService;
         private readonly IMapper _mapper;
         private readonly IAppUserService _employeeService;
-        public PermissionController(IGenericService<Permission> genericService, IMapper mapper, IPermissionService permissionService,IAppUserService employeeService)
+        public PermissionController(IGenericService<Permission> genericService, IMapper mapper, IPermissionService permissionService, IAppUserService employeeService, UserManager<AppUser> userManager)
         {
             _genericService = genericService;
             _mapper = mapper;
             _permissionService = permissionService;
             _employeeService = employeeService;
+            _userManager = userManager;
         }
 
         public IActionResult AddPermission(int id)
@@ -36,12 +39,10 @@ namespace AnnualPermissionApp.UI.Controllers
         [HttpPost]
         public async Task<IActionResult> AddPermission(PermissionAddModel model)
         {
-            //izin durumunu kontrol et
-            // var permission =await _employeeService.PermissionRightThisYear(model.EmployeeId);
-            // if(permission == 0){
-            //     ModelState.AddModelError("","İzin vermeye çalıştığınız kullanıcının izni bulunmamaktadır");
-            // }
-            
+           
+            model.AppUserId = (int)TempData["id"];
+                //modelden gelen alanları
+
             if (ModelState.IsValid)
             {
 
@@ -60,8 +61,8 @@ namespace AnnualPermissionApp.UI.Controllers
                     await model.Image.CopyToAsync(stream);
                     model.RequestPicturePath = name;
                 }
-                model.EmployeeId = (int)TempData["id"];
-                //modelden gelen alanları
+                
+                
 
                 await _genericService.AddAsync(_mapper.Map<Permission>(model));
 

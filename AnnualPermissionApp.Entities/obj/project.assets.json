@@ -1804,11 +1804,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj",
+      "projectUniqueName": "C:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj",
       "projectName": "AnnualPermissionApp.Entities",
-      "projectPath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj",
+      "projectPath": "C:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.Entities\\AnnualPermissionApp.Entities.csproj",
       "packagesPath": "C:\\Users\\EMRE\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.Entities\\obj\\",
+      "outputPath": "C:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\EMRE\\AppData\\Roaming\\NuGet\\NuGet.Config",

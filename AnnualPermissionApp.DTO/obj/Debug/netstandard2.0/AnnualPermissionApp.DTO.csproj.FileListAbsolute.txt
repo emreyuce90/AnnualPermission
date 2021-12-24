@@ -1,9 +1,0 @@
-/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DTO/bin/Debug/netstandard2.0/AnnualPermissionApp.DTO.deps.json
-/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DTO/bin/Debug/netstandard2.0/AnnualPermissionApp.DTO.dll
-/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DTO/bin/Debug/netstandard2.0/AnnualPermissionApp.DTO.pdb
-/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DTO/obj/Debug/netstandard2.0/AnnualPermissionApp.DTO.csprojAssemblyReference.cache
-/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DTO/obj/Debug/netstandard2.0/AnnualPermissionApp.DTO.AssemblyInfoInputs.cache
-/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DTO/obj/Debug/netstandard2.0/AnnualPermissionApp.DTO.AssemblyInfo.cs
-/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DTO/obj/Debug/netstandard2.0/AnnualPermissionApp.DTO.csproj.CoreCompileInputs.cache
-/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DTO/obj/Debug/netstandard2.0/AnnualPermissionApp.DTO.dll
-/home/emre/Desktop/examples/AnnualPermission/AnnualPermissionApp.DTO/obj/Debug/netstandard2.0/AnnualPermissionApp.DTO.pdb

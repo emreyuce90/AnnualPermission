@@ -5,7 +5,7 @@ namespace AnnualPermissionApp.UI.Models
 {
     public class PermissionAddModel
     {
-        public int EmployeeId { get; set; }
+        public int AppUserId { get; set; }
 
         public DateTime StartDate { get; set; } = DateTime.Now;
         public DateTime EndDate { get; set; } = DateTime.Now.AddDays(1);
