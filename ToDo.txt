@@ -1,3 +1,4 @@
 1-Client-side validation
 2-Logging
 3-Error handling
+4-area

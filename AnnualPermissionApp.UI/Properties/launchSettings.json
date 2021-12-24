@@ -17,7 +17,7 @@
     },
     "AnnualPermissionApp.UI": {
       "commandName": "Project",
-      "launchBrowser": true,
+      "launchBrowser": "/Account/Login",
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

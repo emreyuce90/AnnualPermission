@@ -22,7 +22,9 @@ namespace AnnualPermissionApp.UI
         public void ConfigureServices(IServiceCollection services)
         {
 
-            // services.ConfigureApplicationCookie(opt =>
+          
+            services.AddDependencies();
+              // services.ConfigureApplicationCookie(opt =>
             // {
             //     opt.Cookie.Name = "Permission";
             //     opt.ExpireTimeSpan = TimeSpan.FromDays(20);
@@ -31,7 +33,6 @@ namespace AnnualPermissionApp.UI
             //     opt.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
             //     opt.Cookie.Path = "/Account/Login";
             // });
-            services.AddDependencies();
             services.AddAutoMapper(typeof(Startup));
             services.AddControllersWithViews().AddRazorRuntimeCompilation().AddFluentValidation();
         }
@@ -50,7 +51,10 @@ namespace AnnualPermissionApp.UI
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapDefaultControllerRoute();
+                
+                endpoints.MapControllerRoute(name:"areas",pattern:"{area}/{controller}/{action}/{id?}");
+                endpoints.MapControllerRoute(name:"default",pattern:"{controller=Account}/{action=Login}/{id?}");
+                
             });
 
         }
