@@ -1,5 +1,5 @@
 using AnnualPermissionApp.DTO;
-using AnnualPermissionApp.UI.Models;
+using AnnualPermissionApp.UI.Areas.Admin.Models;
 using AutoMapper;
 using PermissionApp.AnnualPermissionApp.Entities.Concrete;
 

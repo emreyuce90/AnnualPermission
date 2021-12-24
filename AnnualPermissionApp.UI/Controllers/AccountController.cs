@@ -82,11 +82,11 @@ namespace AnnualPermissionApp.UI.Controllers
                         var roleList = await _userManager.GetRolesAsync(loggingUser);
                         if (roleList.Contains("Admin"))
                         {
-                            return RedirectToAction("Index","Employee");
+                            return RedirectToAction("Index","Employee",new {area ="Admin"});
                         }
                         else
                         {
-                            return RedirectToAction("GetPermissionList","Permission",new {Id = loggingUser.Id});
+                            return RedirectToAction("GetPermissionList","Permission",new { area="Member", Id = loggingUser.Id});
                         }
                     }
 

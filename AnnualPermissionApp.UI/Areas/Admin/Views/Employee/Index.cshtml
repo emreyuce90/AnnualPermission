@@ -1,0 +1,119 @@
+@model List<EmployeeListDto>
+@{
+    string search = (string)ViewBag.SearchString;
+    if(!String.IsNullOrWhiteSpace(search))
+    {
+        <div class="alert alert-info" role="alert">
+            Şu an <strong>@search </strong>kelimesine göre filtrelenmiş dataları görüntülüyorsunuz
+   <a asp-action="Index" asp-controller="Employee" class="alert-link">Filtreyi kaldır</a>
+        </div>
+    }
+}
+
+    <form asp-controller="Employee" method="get" asp-action="Index" class="mt-3" >
+        <div class="input-group mb-3">
+            <input type="text" name="searchString"class="form-control" placeholder="Çalışan ara..." aria-label="Recipient's username"
+                aria-describedby="basic-addon2">
+        </div>
+    </form>
+
+
+<table class="table table table-responsive table-hover" id="myTable">
+    <thead class="">
+        <tr>
+
+
+            <th>Plasiyer Adı</th>
+            <th>Plasiyer Soyadı</th>
+            <th>Plasiyer Ünvanı</th>
+            <th>İşe Giriş Tarihi</th>
+            <th>Çalışma Zamanı</th>
+            <th>İzin Durumu</th>
+            @* <th>Kanuni izin hakkı</th>
+                <th>Kullandığı İzinler</th> *@
+            <th>İşlemler</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+
+                <td>@item.Name</td>
+                <td>@item.Surname</td>
+                <td>@item.Title</td>
+                <td>@item.EnterDate.ToString("dd/MM/yyyy")</td>
+                <td>@(DateTime.Now.Year - item.EnterDate.Year) YIL</td>
+
+                <td>
+                    @await Component.InvokeAsync("Personelchart",@item.Id)
+                </td>
+                <td>
+
+                    <a class="text-info" asp-controller='Permission' asp-action='GetPermissionList'
+                    asp-route-id='@item.Id'><i class='fas fa-info-circle'></i></a>
+                    <a asp-controller="Permission" asp-action="AddPermission" class="btn btn-warning btn-sm text-white"
+                    asp-route-id="@item.Id"><i class="fas fa-plus p-1"></i></a>
+                    <a class="btn btn-info btn-sm text-white" asp-action="UpdateEmployee" asp-route-id="@item.Id"
+                    asp-controller="Employee"><i class="fas fa-edit p-1"></i></a>
+                    <a asp-controller="Employee" data-bs-toggle="modal" data-bs-target="#myModal"
+                    asp-action="DeleteEmployee" asp-route-id="@item.Id" data-employee="@item.Id"
+                    class="btn btn-danger"><i class="fas fa-trash-alt p-1"></i></a>
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+
+<div class="modal" tabindex="-1" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">UYARI</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Bu kaydı silmek istediğinizden emin misiniz ?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i
+                        class="fas fa-times-circle p-1"></i>Hayır</button>
+                <button type="button" class="btn btn-primary"><i class="fas fa-check-circle p-1"
+                        id="btnSil"></i>Evet</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Javascript{
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#myModal").on('shown.bs.modal', function (event) {
+            let btn = $(event.relatedTarget);
+            let id = btn.data('employee');
+            $("#btnSil").click(function () {
+                $.ajax({
+                    type: "get",
+                    url: "./Employee/DeleteEmployee/" + id,
+
+                    contentType: "application/json;charset=utf-8;",
+                    success: function () {
+                        window.location.reload();
+                    },
+                    error: function (err) {
+                        console.log(err.statusText);
+                        alert(err.statusText);
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+}

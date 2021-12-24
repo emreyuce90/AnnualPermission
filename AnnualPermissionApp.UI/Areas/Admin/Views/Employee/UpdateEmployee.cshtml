@@ -1,0 +1,42 @@
+@model EmployeeUpdateDto
+
+<h3 class="text-center">Plasiyer Güncelle</h3>
+
+<div asp-validation-summary="All" class="text-danger">
+
+</div>
+
+<form asp-controller="Employee" asp-action="UpdateEmployee" method="post" class="w-50 shadow mx-auto p-3">
+    <div class="form-group">
+        <label for="@Model.Name">Plasiyerin Adı:</label>
+        <input type="text" asp-for="@Model.Name" class="form-control">
+        <span asp-validation-for="@Model.Name" class="text-danger"></span>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="@Model.Surname">Plasiyerin Soyadı :</label>
+        <input type="text" asp-for="@Model.Surname" class="form-control">
+        <span asp-validation-for="@Model.Surname" class="text-danger"></span>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="@Model.Title">Plasiyerin Ünvanı :</label>
+        <input type="text" asp-for="@Model.Title" class="form-control">
+        <span asp-validation-for="@Model.Title" class="text-danger"></span>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="@Model.EnterDate">Plasiyerin İşe Giriş Tarihi :</label>
+        <input type="date" asp-for="@Model.EnterDate" class="form-control">
+        <span asp-validation-for="@Model.EnterDate" class="text-danger"></span>
+    </div>
+    <br>
+    <a class="btn btn-danger" asp-action="Index" asp-controller="Employee"><i class="fas fa-undo p-1"></i>Vazgeç</a>
+    <button class="btn btn-success" type="submit"><i class="fas fa-save p-1"></i>Güncelle</button>
+</form>
+
+@section jquery{
+    <script src="~/jquery/jquery.validate.min.js"></script>
+    <script src="~/jquery/jquery.unobtrusive-ajax.min.js"></script>
+
+}

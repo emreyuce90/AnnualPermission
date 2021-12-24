@@ -20,21 +20,14 @@ using AnnualPermissionApp.DTO;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\Views\_ViewImports.cshtml"
-using AnnualPermissionApp.UI.Models;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 5 "C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\Views\_ViewImports.cshtml"
+#line 4 "C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\Views\_ViewImports.cshtml"
 using Microsoft.AspNetCore.Identity;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"353d3a72f56dd8cee0f03fb5d78c56a943f693f4", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0e1404fcfdbe2a1f8e29a02e1e84f79e4f1d9fda", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"75557685150d46c6760455eeab976126c2f277a2", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
