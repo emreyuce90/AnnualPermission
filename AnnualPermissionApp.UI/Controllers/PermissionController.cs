@@ -70,7 +70,7 @@ namespace AnnualPermissionApp.UI.Controllers
             return View(model);
         }
 
-
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetPermissionList(int id)
         {

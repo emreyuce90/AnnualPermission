@@ -86,7 +86,7 @@ namespace AnnualPermissionApp.UI.Controllers
                         }
                         else
                         {
-                            return RedirectToAction("Index","Home");
+                            return RedirectToAction("GetPermissionList","Permission",new {Id = loggingUser.Id});
                         }
                     }
 
@@ -96,6 +96,13 @@ namespace AnnualPermissionApp.UI.Controllers
             }
 
             return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> LogOut()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Login","Account");
         }
 
 

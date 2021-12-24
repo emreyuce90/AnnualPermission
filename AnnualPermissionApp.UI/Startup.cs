@@ -21,35 +21,33 @@ namespace AnnualPermissionApp.UI
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDependencies();
-            services.ConfigureApplicationCookie(opt =>
-            {
-                opt.Cookie.Name = "Permission";
-                opt.ExpireTimeSpan = TimeSpan.FromDays(20);
-                opt.Cookie.HttpOnly = true;
-                opt.Cookie.Path = "Account/Login";
-                opt.Cookie.SameSite = SameSiteMode.Strict;
-                opt.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
 
-            });
+            // services.ConfigureApplicationCookie(opt =>
+            // {
+            //     opt.Cookie.Name = "Permission";
+            //     opt.ExpireTimeSpan = TimeSpan.FromDays(20);
+            //     opt.Cookie.HttpOnly = true;
+            //     opt.Cookie.SameSite = SameSiteMode.Strict;
+            //     opt.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
+            //     opt.Cookie.Path = "/Account/Login";
+            // });
+            services.AddDependencies();
             services.AddAutoMapper(typeof(Startup));
             services.AddControllersWithViews().AddRazorRuntimeCompilation().AddFluentValidation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, UserManager<AppUser> userManager, RoleManager<AppRole> roleManager)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            //IdentityInitilazer.SeedData(userManager, roleManager).Wait();
+            app.UseStaticFiles();
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
-            IdentityInitilazer.SeedData(userManager, roleManager).Wait();
-            app.UseStaticFiles();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapDefaultControllerRoute();
