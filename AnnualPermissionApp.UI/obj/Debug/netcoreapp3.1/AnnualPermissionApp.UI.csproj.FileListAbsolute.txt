@@ -406,4 +406,4 @@ C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcorea
 C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Permission\AddPermission.cshtml.g.cs
 C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Permission\GetPermissionList.cshtml.g.cs
 C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Error\StatusError.cshtml.g.cs
-C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Error\GlobalErrorHandler.cshtml.g.cs
+C:\Users\EMRE\Desktop\AnnualPermission\AnnualPermissionApp.UI\obj\Debug\netcoreapp3.1\Razor\Views\Error\Error.cshtml.g.cs

@@ -9,7 +9,7 @@ namespace AnnualPermissionApp.UI.Controllers
     {
         public IActionResult Index()
         {
-            throw new Exception();
+            
             return View();
         }
     }

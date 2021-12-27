@@ -100,7 +100,7 @@ namespace AnnualPermissionApp.UI.Controllers
 
         [HttpPost]
         public async Task<IActionResult> LogOut()
-        {
+        {   throw new System.Exception("An error occured");
             await _signInManager.SignOutAsync();
             return RedirectToAction("Login","Account");
         }
