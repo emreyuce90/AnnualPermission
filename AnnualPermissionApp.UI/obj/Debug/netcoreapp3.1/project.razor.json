@@ -14559,6 +14559,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Views\\Error\\ErrorPage.cshtml",
+      "TargetPath": "Views\\Error\\ErrorPage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Areas\\Admin\\Views\\Shared\\Components\\Personelchart\\Default.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Shared\\Components\\Personelchart\\Default.cshtml",
       "FileKind": "mvc"
@@ -14586,11 +14591,6 @@
     {
       "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Areas\\Admin\\Views\\Shared\\Components\\Personel\\Default.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Shared\\Components\\Personel\\Default.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Views\\Error\\Error.cshtml",
-      "TargetPath": "Views\\Error\\Error.cshtml",
       "FileKind": "mvc"
     },
     {

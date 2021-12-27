@@ -12,7 +12,7 @@ namespace AnnualPermissionApp.UI.Controllers
             ViewBag.ErrorPath = errorHandler.Path;
             ViewBag.Message = errorHandler.Error.Message;
             ViewBag.StackTrace = errorHandler.Error.StackTrace;
-            return View("Error");
+            return View("ErrorPage");
         }
 
         // [Route("/Errorstatus")]
