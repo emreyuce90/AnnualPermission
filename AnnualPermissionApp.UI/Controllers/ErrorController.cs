@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AnnualPermissionApp.UI.Controllers
 {
-    public class ErrorController:Controller
+    public class ErrorController : Controller
     {
         [Route("/Error")]
         [HttpGet]
@@ -14,6 +14,15 @@ namespace AnnualPermissionApp.UI.Controllers
             ViewBag.Message = errorHandler.Error.Message;
             ViewBag.StackTrace = errorHandler.Error.StackTrace;
             return View("Error");
+        }
+
+        [Route("/Errorstatus")]
+        public IActionResult StatusPageErrorHandler()
+        {
+            var statusCode = HttpContext.Features.Get<IStatusCodeReExecuteFeature>();
+            ViewBag.ErrorPath = statusCode.OriginalPath;
+            ViewBag.ErrorPath = statusCode.OriginalQueryString;
+            return View("StatusError");
         }
     }
 }

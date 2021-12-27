@@ -14574,6 +14574,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Views\\Error\\StatusError.cshtml",
+      "TargetPath": "Views\\Error\\StatusError.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Views\\Shared\\_LoginLayout.cshtml",
       "TargetPath": "Views\\Shared\\_LoginLayout.cshtml",
       "FileKind": "mvc"
