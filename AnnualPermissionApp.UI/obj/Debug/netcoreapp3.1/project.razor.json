@@ -14584,6 +14584,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Views\\Error\\Error.cshtml",
+      "TargetPath": "Views\\Error\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\EMRE\\Desktop\\AnnualPermission\\AnnualPermissionApp.UI\\Areas\\Admin\\Views\\Shared\\Components\\User\\Default.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Shared\\Components\\User\\Default.cshtml",
       "FileKind": "mvc"

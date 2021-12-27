@@ -44,6 +44,10 @@ namespace AnnualPermissionApp.UI
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+            }
             //IdentityInitilazer.SeedData(userManager, roleManager).Wait();
             app.UseStaticFiles();
             app.UseRouting();

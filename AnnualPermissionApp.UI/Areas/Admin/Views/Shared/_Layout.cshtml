@@ -1,3 +1,6 @@
+@using Microsoft.AspNetCore.Identity
+@using PermissionApp.AnnualPermissionApp.Entities.Concrete
+@inject SignInManager<AppUser> _signIn
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,12 +17,26 @@
 @RenderSection("css",false)
 
 <body>
-<nav class="navbar navbar-light bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand text-white">Bayraktarlar İzin Sistemi</a>
+    <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white">Bayraktarlar İzin Sistemi</a>
+            <ul class="nav navbar-nav navbar-right">
+                @if (_signIn.IsSignedIn(User))
+                {
+                    <li class="nav-item">
+                        <form method="post" asp-action="LogOut" asp-controller="Account" asp-area="">
+                            <button class="nav-link btn btn-link py-0 text-white" type="submit">Logout @User.Identity.Name</button>
+                        </form>
+                        </li>
+                }
+                else
+                {
+                    <li><a class="nav-link text-white" asp-action="Login" asp-controller="Account">Login</a></li>
+                }
 
-  </div>
-</nav>
+            </ul>
+        </div>
+    </nav>
     <!--Container Main start-->
     <div class="container-fluid">
         <div class="row">
