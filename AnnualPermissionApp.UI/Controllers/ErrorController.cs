@@ -13,16 +13,16 @@ namespace AnnualPermissionApp.UI.Controllers
             ViewBag.ErrorPath = errorHandler.Path;
             ViewBag.Message = errorHandler.Error.Message;
             ViewBag.StackTrace = errorHandler.Error.StackTrace;
-            return View("Error");
+            return View();
         }
 
-        [Route("/Errorstatus")]
-        public IActionResult StatusPageErrorHandler()
-        {
-            var statusCode = HttpContext.Features.Get<IStatusCodeReExecuteFeature>();
-            ViewBag.ErrorPath = statusCode.OriginalPath;
-            ViewBag.ErrorPath = statusCode.OriginalQueryString;
-            return View("StatusError");
-        }
+        // [Route("/Errorstatus")]
+        // public IActionResult StatusPageErrorHandler()
+        // {
+        //     var statusCode = HttpContext.Features.Get<IStatusCodeReExecuteFeature>();
+        //     ViewBag.ErrorPath = statusCode.OriginalPath;
+        //     ViewBag.ErrorPath = statusCode.OriginalQueryString;
+        //     return View("StatusError");
+        // }
     }
 }
